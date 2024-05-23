@@ -18,14 +18,6 @@ const RegisterForm = () => {
   const [errors, setErrors] = useState({});
 
   const history = useHistory();
-
-  const handleChange = (event) => {
-    setRegisterData({
-      ...registerData,
-      [event.target.name]: event.target.value,
-    });
-  };
-
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
@@ -34,6 +26,13 @@ const RegisterForm = () => {
     } catch (err) {
       setErrors(err.response?.data);
     }
+  };
+
+  const handleChange = (event) => {
+    setRegisterData({
+      ...registerData,
+      [event.target.name]: event.target.value,
+    });
   };
 
   return (
