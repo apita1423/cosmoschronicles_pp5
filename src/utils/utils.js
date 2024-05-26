@@ -11,7 +11,5 @@ export const fetchMoreData = async (resource, setResource) => {
             return acc.some(accResult => accResult.id === cur.id) ? acc : [...acc, cur]
          }, prevResource.results)
       }))
-   } catch (err) {
-      
-   }
+   } catch (err) {}
 }
