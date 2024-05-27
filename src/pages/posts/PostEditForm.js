@@ -70,22 +70,24 @@ function PostEditForm() {
     const formData = new FormData();
 
     formData.append("title", title);
-     formData.append("content", content);
-     
-     if (imageInput?.current?.files[0]) {
-        formData.append("image", imageInput.current.files[0]);
-     }
+    formData.append("content", content);
+
+    if (imageInput?.current?.files[0]) {
+      formData.append("image", imageInput.current.files[0]);
+    }
 
     try {
-      await axiosReq.put(`/posts/${id}`, formData);
+      await axiosReq.put(`/posts/${id}/`, formData);
+
       history.push(`/posts/${id}`);
     } catch (err) {
+      console.log(err);
+
       if (err.response?.status !== 401) {
         setErrors(err.response?.data);
       }
     }
   };
-
   const textFields = (
     <div className="text-center">
       <Form.Group>
