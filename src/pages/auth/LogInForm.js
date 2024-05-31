@@ -110,7 +110,7 @@ function LogInForm() {
             >
                 <Image
                     className={`${appStyles.FillerImage}`}
-                    src={"https://codeinstitute.s3.amazonaws.com/AdvancedReact/hero.jpg"}
+                    src={"https://res.cloudinary.com/db5hwihda/image/upload/v1717172307/space-16_t1ykdd.jpg"}
                 />
             </Col>
         </Row>

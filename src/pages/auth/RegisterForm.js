@@ -91,7 +91,7 @@ const RegisterForm = () => {
       </Col>
       
       <Col md={6} className={`my-auto d-none d-md-block p-2 ${styles.RegisterCol}`}>
-        <Image className={`${appStyles.FillerImage}`} src={"https://codeinstitute.s3.amazonaws.com/AdvancedReact/hero2.jpg"} />
+        <Image className={`${appStyles.FillerImage}`} src={"https://res.cloudinary.com/db5hwihda/image/upload/v1717172597/space-17_qmipgz.jpg"} />
       </Col>
     </Row>
   );

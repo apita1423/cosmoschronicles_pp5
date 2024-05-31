@@ -1,8 +1,8 @@
 .App {
   font-family: "Chakra Petch", sans-serif;
   background-color: #f8f8f8;
-  background: rgb(21, 3, 75);
-  background: linear-gradient(71deg, rgba(21, 3, 75, 1) 21%, rgba(223, 96, 96, 1) 53%, rgba(25, 91, 122, 1) 94%);
+  background: rgb(112, 17, 97);
+  background: radial-gradient(circle, rgba(112, 17, 97, 1) 0%, rgba(21, 3, 75, 1) 100%);
   min-height: 100vh;
 }
 
@@ -11,7 +11,7 @@
 }
 
 .Content {
-  background-color: #ffffff;
+  background-color: #ead7d7;
   padding: 10px;
   border-radius: 10px;
   border: 1px solid #dadadf;
@@ -19,6 +19,7 @@
 
 .FillerImage {
   object-fit: cover;
+  border-radius: 20px;
   height: 100%;
   width: 100%;
 }
@@ -34,16 +35,17 @@
 }
 
 a {
-  color: #0b132b;
+  color: #3da35d;
   transition: color ease-in-out 0.3s;
 }
 
 a:hover {
   text-decoration: none;
+  color: #28bbb8
 }
 
 a:hover i {
-  color: #6247aa;
+  color: purple;
   transition: color ease-in-out 0.3s;
 }
 
@@ -61,7 +63,7 @@ i {
 i:hover {
   cursor: pointer;
   transition: color ease-in-out 0.3s;
-  color: whitesmoke;
+  color: red;
 }
 
 figure {

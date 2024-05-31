@@ -1,7 +1,7 @@
 .NavBar {
   background-color: #15034b;
-  background: rgb(21, 3, 75);
-  background: linear-gradient(71deg, rgba(21, 3, 75, 1) 21%, rgba(223, 96, 96, 1) 53%, rgba(25, 91, 122, 1) 94%);
+  background: rgb(112, 17, 97);
+  background: radial-gradient(circle, rgba(112, 17, 97, 1) 0%, rgba(21, 3, 75, 1) 100%);
   /* border: 1px solid #dadadf */
 }
 
@@ -10,5 +10,5 @@
 }
 
 .Active i {
-  color: #15034b;
+  color: #ff5757;
 }

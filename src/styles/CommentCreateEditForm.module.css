@@ -1,5 +1,6 @@
 .Form {
     border: none;
+    border-radius: 10px;
     border-bottom: 2px #231942 solid;
 }
 
