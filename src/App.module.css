@@ -1,10 +1,8 @@
 .App {
-  font-family: "DM Sans", sans-serif;
+  font-family: "Chakra Petch", sans-serif;
   background-color: #f8f8f8;
   background: rgb(21, 3, 75);
   background: linear-gradient(71deg, rgba(21, 3, 75, 1) 21%, rgba(223, 96, 96, 1) 53%, rgba(25, 91, 122, 1) 94%);
-  /* background: rgb(223, 96, 96);
-  background: radial-gradient(circle, rgba(223, 96, 96, 1) 0%, rgba(25, 91, 122, 1) 62%, rgba(21, 3, 75, 1) 100%); */
   min-height: 100vh;
 }
 
@@ -15,7 +13,7 @@
 .Content {
   background-color: #ffffff;
   padding: 10px;
-  border-radius: 2px;
+  border-radius: 10px;
   border: 1px solid #dadadf;
 }
 
@@ -36,7 +34,7 @@
 }
 
 a {
-  color: #555555;
+  color: #0b132b;
   transition: color ease-in-out 0.3s;
 }
 
@@ -45,7 +43,7 @@ a:hover {
 }
 
 a:hover i {
-  color: #2142b2;
+  color: #6247aa;
   transition: color ease-in-out 0.3s;
 }
 
@@ -54,7 +52,7 @@ input[type="file"] {
 }
 
 i {
-  color: #cfced3;
+  color: whitesmoke;
   font-size: 1.6rem;
   padding: 7px;
   vertical-align: middle;
@@ -63,7 +61,7 @@ i {
 i:hover {
   cursor: pointer;
   transition: color ease-in-out 0.3s;
-  color: #2142b2;
+  color: whitesmoke;
 }
 
 figure {
