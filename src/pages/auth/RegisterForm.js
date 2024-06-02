@@ -5,8 +5,10 @@ import btnStyles from "../../styles/Button.module.css";
 import appStyles from "../../App.module.css";
 import { Form, Button, Image, Col, Row, Container, Alert } from "react-bootstrap";
 import axios from "axios";
+import { useRedirect } from "../../hooks/useRedirect";
 
 const RegisterForm = () => {
+  useRedirect("loggedIn");
   const [registerData, setRegisterData] = useState({
     username: "",
     password1: "",
@@ -89,7 +91,7 @@ const RegisterForm = () => {
           </Link>
         </Container>
       </Col>
-      
+
       <Col md={6} className={`my-auto d-none d-md-block p-2 ${styles.RegisterCol}`}>
         <Image className={`${appStyles.FillerImage}`} src={"https://res.cloudinary.com/db5hwihda/image/upload/v1717172597/space-17_qmipgz.jpg"} />
       </Col>
