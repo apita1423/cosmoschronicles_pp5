@@ -1,0 +1,27 @@
+.Content {
+  border: 1px solid #dadadf;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 10px;
+  color: aliceblue;
+}
+
+.Paragraph {
+  font-size: 20px;
+}
+
+.Bold {
+  color: #ff5757;
+}
+
+.SocialMedia {
+    justify-content: center;
+}
+
+.Copyright {
+    justify-content: center;
+}
+
+.Copyright i {
+    color: #ff5757;
+}
