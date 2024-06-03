@@ -28,26 +28,26 @@ function aboutUs() {
       </h2>
       <p className={styles.Paragraph}>
         <b>
-          <i class="fas fa-user-astronaut"></i> Community Engagement:
+          <i className="fas fa-user-astronaut"></i> Community Engagement:
         </b>{" "}
         Join a diverse and inclusive comunity of astronomy lovers. Share your stargazing experiences, celestial photography, and cosmic discoveries with fellow enthusiasts.
       </p>
       <p className={styles.Paragraph}>
         <b>
-          <i class="fas fa-user-astronaut"></i> Event Coordination:
+          <i className="fas fa-user-astronaut"></i> Event Coordination:
         </b>{" "}
         Stay updated on celestial events such as meteor showers, eclipses, launches, and much more. Organise or join local and virtual stargazing events.
       </p>
       <p className={styles.Paragraph}>
         <b>
-          <i class="fas fa-user-astronaut"></i>
+          <i className="fas fa-user-astronaut"></i>
           Educational Content:
         </b>{" "}
         Have acces to a wealth of resources including articles, tutorials, and lives streams from experts, to deepen your understanding of the universe.
       </p>
       <p className={styles.Paragraph}>
         <b>
-          <i class="fas fa-user-astronaut"></i>Collaborative Projects:
+          <i className="fas fa-user-astronaut"></i>Collaborative Projects:
         </b>{" "}
         Engage in citizen science projects and contribute to real astronomical research alongside professionals and institutions. <b>Coming Soon</b>
       </p>
@@ -63,24 +63,24 @@ function aboutUs() {
         <Asset src={AboutUs} alt={"about us image"} />
       </div>
       <Row className={styles.SocialMedia}>
-        <a class="text-white" href="https://www.facebook.com/" target="blank" rel="noopener" aria-label="Visit our Facebook page (opens in a new tab)">
+        <a className="text-white" href="https://www.facebook.com/" target="blank" rel="noopener" aria-label="Visit our Facebook page (opens in a new tab)">
           {" "}
-          <i class="fa-brands fa-square-facebook"></i>
+          <i className="fa-brands fa-square-facebook"></i>
         </a>
-        <a class="text-white" href="https://twitter.com/" target="blank" rel="noopener" aria-label="Visit our Twitter page (opens in a new tab)">
-          <i class="fa-brands fa-square-x-twitter"></i>
+        <a className="text-white" href="https://twitter.com/" target="blank" rel="noopener" aria-label="Visit our Twitter page (opens in a new tab)">
+          <i className="fa-brands fa-square-x-twitter"></i>
         </a>
-        <a class="text-white" href="https://www.instagram.com/" target="blank" rel="noopener" aria-label="Visit our Instagram page (opens in a new tab)">
-          <i class="fa-brands fa-square-instagram"></i>
+        <a className="text-white" href="https://www.instagram.com/" target="blank" rel="noopener" aria-label="Visit our Instagram page (opens in a new tab)">
+          <i className="fa-brands fa-square-instagram"></i>
         </a>
-        <a class="text-white" href="https://www.youtube.com/" target="blank" rel="noopener" aria-label="Visit our YouTube page (opens in a new tab)">
+        <a className="text-white" href="https://www.youtube.com/" target="blank" rel="noopener" aria-label="Visit our YouTube page (opens in a new tab)">
           {" "}
-          <i class="fa-brands fa-youtube"></i>
+          <i className="fa-brands fa-youtube"></i>
         </a>
       </Row>
       <Row className={styles.Copyright}>
         <p>
-          Made with <i class="fas fa-heart"></i> by Amanda Pita for educational purposes only.
+          Made with <i className="fas fa-heart"></i> by Amanda Pita for educational purposes only.
         </p>
       </Row>
     </Container>
