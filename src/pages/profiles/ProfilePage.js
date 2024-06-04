@@ -19,7 +19,7 @@ import { Button, Image } from "react-bootstrap";
 import InfiniteScroll from "react-infinite-scroll-component";
 import Post from "../posts/Post";
 import { fetchMoreData } from "../../utils/utils";
-import NoResults from "../../assets/no-results.png";
+import NoResults from "../../assets/not-found.png";
 import { ProfileEditDropdown } from "../../components/MoreDropdown";
 
 function ProfilePage() {

@@ -107,7 +107,7 @@ Cosmos Chronicles is my fifth project with Code Institute. The idea for Cosmos C
 ### Wireframes
 
 ### Database Relationship Schema
-
+    
 ---
 
 ## Features
@@ -177,6 +177,7 @@ Cosmos Chronicles is my fifth project with Code Institute. The idea for Cosmos C
 - Coolors - Used to pick colours.
 - CSS Gradient - Used to great the colours gradient for the background. [CSS Gradient](https://cssgradient.io/)
 - Canva - Used for the design of the logo, notfound page image, and astronomical clock image.
+- ChaptGPT - Used for About Us page content.
 
 ---
 ## Components
@@ -191,11 +192,13 @@ Cosmos Chronicles is my fifth project with Code Institute. The idea for Cosmos C
 
 ### Content
 
+- Content in bios and posts were done by me. ChatGPT was used for the content in the About Us page.
+
 ### Media
 
-Images have been sourced from Pexel, NASA Images, and Canva.
+Images have been sourced from Pexel, NASA Photojournal Images, and Canva.
 
-Imagers sourced from NASA Photojournal library.
+Images sourced from NASA Photojournal library.
 
 - [Saturn Image](https://photojournal.jpl.nasa.gov/catalog/PIA01268)
 - [Titan Image](https://photojournal.jpl.nasa.gov/catalog/PIA07232)
@@ -218,6 +221,17 @@ Images sourced from Pexel
 - [Space Image 14](https://www.pexels.com/photo/black-light-post-near-tree-2214035/)
 - [Space Image 15](https://www.pexels.com/photo/eye-level-photo-of-train-tracks-surrounded-with-trees-1448899/)
 - [Space Image 16](https://www.pexels.com/photo/photo-of-beach-and-palm-trees-1457812/)
+
+Images from Canva
+
+- ![Canva Image 1](/src/assets/readme-images/canva-clock.png)
+- ![Canva Image 2](/src/assets/readme-images/profile-1.png)
+- ![Canva Image 3](/src/assets/readme-images/profile-2.png)
+- ![Canva Image 4](/src/assets/readme-images/profile-3.png)
+- ![Canva Image 5](/src/assets/readme-images/profile-4.png)
+- ![Canva Image 6](/src/assets/readme-images/profile-5.png)
+- ![Canva Image 7](/src/assets/readme-images/profile-6.png)
+- ![Canva Image 8](/src/assets/readme-images/profile-7.png)
 
 ### Acknowledgments
 
