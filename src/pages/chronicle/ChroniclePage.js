@@ -15,7 +15,7 @@ function ChroniclePage() {
         const handleMount = async () => {
             try {
                 const [{ data: chronicle }] = await Promise.all([
-                    axiosReq.get(`/chronicles/${id}`),
+                    axiosReq.get(`/news/${id}`),
                 ]);
                 setChronicle({ results: [chronicle] });
                 console.log(chronicle);

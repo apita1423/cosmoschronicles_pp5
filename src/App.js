@@ -40,8 +40,8 @@ function App() {
           <Route exact path="/profiles/:id/edit/username" render={() => <UsernameForm />} />
           <Route exact path="/profiles/:id/edit/password" render={() => <UserPasswordForm />} />
           <Route exact path="/profiles/:id/edit" render={() => <ProfileEditForm />} />
-          <Route exact path="/chronicles/create" render={() => <ChronicleCreateForm />} />
-          <Route exact path="/chronicles/:id" render={() => <ChroniclePage />} />
+          <Route exact path="/news/create" render={() => <ChronicleCreateForm />} />
+          <Route exact path="/news/:id" render={() => <ChroniclePage />} />
           <Route exact path="/aboutus" render={() => <AboutUs />} />
           <Route render={() => <NotFound />} />
         </Switch>

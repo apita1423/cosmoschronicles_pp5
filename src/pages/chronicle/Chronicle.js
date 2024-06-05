@@ -1,11 +1,11 @@
 import React from "react";
-import { Card, Media } from "react-bootstrap";
+import { Container, Card, Media } from "react-bootstrap";
 import styles from "../../styles/Chronicle.module.css";
 import { useCurrentUser } from "../../contexts/CurrentUserContext";
 import { Link, useHistory } from "react-router-dom";
 import Avatar from "../../components/Avatar";
 import { axiosRes } from "../../api/axiosDefault";
-import DropdownMenu from "react-bootstrap/esm/DropdownMenu";
+import { MoreDropdown } from "../../components/MoreDropdown";
 
 const Chronicle = (props) => {
     const {
@@ -19,6 +19,7 @@ const Chronicle = (props) => {
         image_copyright,
         published_on,
         category,
+        author,
         chroniclePage,
     } = props;
 
@@ -27,12 +28,12 @@ const Chronicle = (props) => {
     const history = useHistory
 
     const handleEdit = () => {
-        history.push(`/chronicles/${id}/edit`);
+        history.push(`/news/${id}/edit`);
     };
 
     const handleDelete = async () => {
         try {
-            await axiosRes.delete(`/chronicles/${id}/`);
+            await axiosRes.delete(`/news/${id}/`);
             history.goBack();
         } catch (err) {
             console.log(err)
@@ -49,23 +50,26 @@ const Chronicle = (props) => {
                     </Link>
                     <div className="d-flex align-items-center">
                         <span>{published_on}</span>
-                        {is_owner && chroniclePage && "..."(
-                            <DropdownMenu handleEdit={handleEdit} handleDelete={handleDelete} />
-                        )}
+                        {is_owner && chroniclePage && <MoreDropdown handleEdit={handleEdit} handleDelete={handleDelete} />}
                     </div>
                 </Media>
             </Card.Body>
-            <Link to={`/chronicles/${id}`}>
-                <Card.Img src={image} alt={title} />
-            </Link>
-            <Card.Body>
-                {title && <Card.Title className="text-center">{title}</Card.Title>}
-                {description && <Card.Text>{description}</Card.Text>}
-                {image_copyright && <Card.Text>{image_copyright}</Card.Text>}
-                {category && <Card.Text>{category}</Card.Text>}
-            </Card.Body>
+            <Container>
+                <h2>
+                    <p>{title}</p>
+                </h2>
+                <Link to={`/news/${id}`}>
+                    <Card.Img src={image} alt={title} />
+                </Link>
+                <p><strong>Image Copyright:</strong>  {image_copyright}</p>
+                <br />
+                <p><strong>Summary:</strong> {description}</p>
+                <br />
+                <p><strong>Author:</strong> {author}</p>
+                <p><strong>Category:</strong> {category}</p>
+            </Container>
         </Card>
-    );
+    )
 }
 
 export default Chronicle;

@@ -57,8 +57,8 @@ function ChronicleCreateForm() {
     formData.append("category", category);
 
     try {
-      const { data } = await axiosReq.post("/chronicles/", formData);
-      history.push(`/chronicles/${data.id}`);
+      const { data } = await axiosReq.post("/news/", formData);
+      history.push(`/news/${data.id}`);
     } catch (err) {
       console.log(err);
       if (err.response?.status !== 401) {
