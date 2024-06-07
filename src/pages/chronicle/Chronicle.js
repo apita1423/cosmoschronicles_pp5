@@ -2,7 +2,7 @@ import React from "react";
 
 import styles from "../../styles/Chronicle.module.css";
 import { useCurrentUser } from "../../contexts/CurrentUserContext";
-import { Card, Media, OverlayTrigger, Tooltip } from "react-bootstrap";
+import { Card, Container, Media, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Avatar from "../../components/Avatar";
 
@@ -12,9 +12,6 @@ const Chronicle = (props) => {
         owner,
         profile_id,
         profile_image,
-        comments_count,
-        likes_count,
-        like_id,
         title,
         description,
         author,
@@ -29,60 +26,31 @@ const Chronicle = (props) => {
     const is_owner = currentUser?.username === owner
 
     return (
-        <Card className={styles.Chronicle}>
-            <Card.Body>
-                <Media className="align-items-center justify-content-between">
-                    <Link to={`/profiles/${profile_id}`}>
-                        <Avatar src={profile_image} height={55} />
-                        {owner}
-                    </Link>
-                    <div className="d-flex align-items-center">
-                        <span>{published_on}</span>
-                        {is_owner && chroniclePage && "..."}
-                    </div>
-                </Media>
-            </Card.Body>
-            <Link to={`/news/${id}`}>
-                <Card.Img src={image} alt={title} />
-            </Link>
-            <Card.Body>
-                {title && <Card.Title className="text-center">{title}</Card.Title>}
-                <p><strong>Author: </strong>{author}</p>
-                <p><strong>Category: </strong>{category}</p>
-                <p><strong>Summary: </strong>{description}</p>
-                <p><strong>Image Copyright: </strong>{image_copyright}</p>
-                <div className={styles.ChronicleBar}>
-                    {is_owner ? (
-                        <OverlayTrigger
-                            placement="top"
-                            overlay={<Tooltip>You can't like your own news!</Tooltip>}
-                        >
-                            <i className="far fa-thumbs-up" />
-                        </OverlayTrigger>
-                    ) : like_id ? (
-                        <span onClick={() => { }}>
-                            <i className={`fas fa-thumbs-up ${styles.thumbsup}`} />
-                        </span>
-                    ) : currentUser ? (
-                        <span onClick={() => { }}>
-                            <i className={`far fa-thumbs-up ${styles.thumbsupOutline}`} />
-                        </span>
-                    ) : (
-                        <OverlayTrigger
-                            placement="top"
-                            overlay={<Tooltip>Log in to like News!</Tooltip>}
-                        >
-                            <i className="far fa-thumbs-up" />
-                        </OverlayTrigger>
-                    )}
-                    {likes_count}
-                    <Link to={`/news/${id}`}>
-                        <i className="far fa-comments" />
-                    </Link>
-                    {comments_count}
+        <Container fluid className={styles.Chronicle}>
+            <Media className="align-items-center justify-content-between">
+                <Link to={`/profiles/${profile_id}`}>
+                    <Avatar src={profile_image} height={55} />
+                    {owner}
+                </Link>
+                <div className="d-flex align-items-center">
+                    <span>{published_on}</span>
+                    {is_owner && chroniclePage && "..."}
                 </div>
-            </Card.Body>
-        </Card>
+            </Media>
+
+            <Col className={styles.Chronicle}>
+                <Link to={`/news/${id}`}>
+                    <img src={image} alt={title} />
+                </Link>
+                <Col>
+                    {title && <Card.Title className="text-center">{title}</Card.Title>}
+                    <p><strong>Author: </strong>{author}</p>
+                    <p><strong>Category: </strong>{category}</p>
+                    <p><strong>Summary: </strong>{description}</p>
+                    <p><strong>Image Copyright: </strong>{image_copyright}</p>
+                </Col>
+            </Col>
+        </Container>
     )
 }
 
