@@ -16,8 +16,6 @@ import UserPasswordForm from "./pages/profiles/UserPasswordForm";
 import ProfileEditForm from "./pages/profiles/ProfileEditForm";
 import NotFound from "./components/NotFound";
 import AboutUs from "./pages/AboutUs";
-import ChronicleCreateForm from "./pages/chronicle/ChronicleCreateForm";
-import ChroniclePage from "./pages/chronicle/ChroniclePage";
 
 function App() {
   const currentUser = useCurrentUser();
@@ -28,9 +26,9 @@ function App() {
       <NavBar />
       <Container className={styles.Main}>
         <Switch>
-          <Route exact path="/" render={() => <PostsPage message="No results found. Adjust the search keyword." />} />
-          <Route exact path="/feed" render={() => <PostsPage message="No results found. Adjust the search keyword or follow a user." filter={`owner__followed__owner__profile=${profile_id}&`} />} />
-          <Route exact path="/liked" render={() => <PostsPage message="No results found. Adjust the search keyword or like a post." filter={`likes__owner__profile=${profile_id}&ordering=-likes__created_at&`} />} />
+          <Route exact path="/" render={() => <PostsPage message="No results found. Adjust your search keyword." />} />
+          <Route exact path="/feed" render={() => <PostsPage message="No results found. Adjust your search keyword or follow a user." filter={`owner__followed__owner__profile=${profile_id}&`} />} />
+          <Route exact path="/liked" render={() => <PostsPage message="No results found. Adjust your search keyword or like a post." filter={`likes__owner__profile=${profile_id}&ordering=-likes__created_at&`} />} />
           <Route exact path="/login" render={() => <LogInForm />} />
           <Route exact path="/register" render={() => <RegisterForm />} />
           <Route exact path="/posts/create" render={() => <PostCreateForm />} />
@@ -40,8 +38,6 @@ function App() {
           <Route exact path="/profiles/:id/edit/username" render={() => <UsernameForm />} />
           <Route exact path="/profiles/:id/edit/password" render={() => <UserPasswordForm />} />
           <Route exact path="/profiles/:id/edit" render={() => <ProfileEditForm />} />
-          <Route exact path="/news/create" render={() => <ChronicleCreateForm />} />
-          <Route exact path="/news/:id" render={() => <ChroniclePage />} />
           <Route exact path="/aboutus" render={() => <AboutUs />} />
           <Route render={() => <NotFound />} />
         </Switch>
