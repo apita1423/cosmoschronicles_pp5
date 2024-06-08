@@ -28,7 +28,7 @@ const Chronicle = (props) => {
     const history = useHistory();
 
     const handleEdit = () => {
-        history.push(`/news/${id}/`);
+        history.push(`/news/${id}/edit`);
     };
 
     const handleDelete = async () => {

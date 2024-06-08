@@ -19,6 +19,7 @@ import AboutUs from "./pages/AboutUs";
 import ChronicleCreateForm from "./pages/chronicles/ChronicleCreateForm";
 import ChroniclePage from "./pages/chronicles/ChroniclePage";
 import ChroniclesPage from "./pages/chronicles/ChroniclesPage";
+import ChronicleEditForm from "./pages/chronicles/ChronicleEditForm";
 
 function App() {
   const currentUser = useCurrentUser();
@@ -44,6 +45,7 @@ function App() {
           <Route exact path="/news/create" render={() => <ChronicleCreateForm />} />
           <Route exact path="/news/:id" render={() => <ChroniclePage />} />
           <Route exact path="/news" render={() => <ChroniclesPage />} />
+          <Route exact path="/news/:id/edit" render={() => <ChronicleEditForm />} />
           <Route exact path="/aboutus" render={() => <AboutUs />} />
           <Route render={() => <NotFound />} />
         </Switch>
