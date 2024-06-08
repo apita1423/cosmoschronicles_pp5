@@ -44,7 +44,7 @@ function ChronicleCreateForm() {
             URL.revokeObjectURL(image);
             setNewsData({
                 ...newsData,
-                image: URL.createObjectURL(event.target.file[0]),
+                image: URL.createObjectURL(event.target.files[0]),
             });
         }
     };
