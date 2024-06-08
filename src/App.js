@@ -17,6 +17,7 @@ import ProfileEditForm from "./pages/profiles/ProfileEditForm";
 import NotFound from "./components/NotFound";
 import AboutUs from "./pages/AboutUs";
 import ChronicleCreateForm from "./pages/chronicles/ChronicleCreateForm";
+import ChroniclePage from "./pages/chronicles/ChroniclePage";
 
 function App() {
   const currentUser = useCurrentUser();
@@ -40,6 +41,7 @@ function App() {
           <Route exact path="/profiles/:id/edit/password" render={() => <UserPasswordForm />} />
           <Route exact path="/profiles/:id/edit" render={() => <ProfileEditForm />} />
           <Route exact path="/news/create" render={() => <ChronicleCreateForm />} />
+          <Route exact path="/news/:id" render={() => <ChroniclePage />} />
           <Route exact path="/aboutus" render={() => <AboutUs />} />
           <Route render={() => <NotFound />} />
         </Switch>
