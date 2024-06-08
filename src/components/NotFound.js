@@ -6,7 +6,7 @@ import Asset from "./Asset";
 const notFound = () => {
   return (
     <div className={styles.NotFound}>
-      <Asset src={NotFound} message={"Page Not Found: Sorry, this page is in a different galaxy!"} />
+      <Asset src={NotFound} message={"404 Error: Sorry, this page is in a different galaxy!"} />
     </div>
   );
 };
