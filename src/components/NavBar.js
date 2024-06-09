@@ -53,7 +53,7 @@ const NavBar = () => {
     <NavLink className={styles.NavLink} to={`/profiles/${currentUser?.profile_id}`}>
       <Avatar src={currentUser?.profile_image} text="Profile" height={40} />
     </NavLink>
-    <OverlayTrigger placement="bottom" overlay={<Tooltip>Log Out</Tooltip>}>
+    <OverlayTrigger placement="bottom-start" overlay={<Tooltip>Log Out</Tooltip>}>
     <NavLink className={styles.NavLink} to="/" onClick={handleLogOut}>
       <i className="fas fa-sign-out-alt"></i>
     </NavLink>
