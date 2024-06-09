@@ -68,7 +68,7 @@
 
 ## Introduction
 
-Cosmos Chronicles is my fifth project with Code Institute. The idea for Cosmos Chronicles has been ong coming. I have been wanting to do a project based on one of my other passions Astronomy. Cosmos Chronicles is based off CI's Moments Walkthrough, which allowed my idea of creating a place for space enthusiants to come together and post about everything astronomy.
+Cosmos Chronicles is my fifth project with Code Institute. The idea for Cosmos Chronicles has been around since I started with my first project. I have been wanting to do a project based on one of my other passions Astronomy. Cosmos Chronicles is based off CI's Moments Walkthrough, which allowed my idea of creating a place for space enthusiants to come together and post about everything astronomy.
 
 ---
 
@@ -188,11 +188,11 @@ Cosmos Chronicles is my fifth project with Code Institute. The idea for Cosmos C
 
 ### Code Used
 
-- I relied on CI's Moments Walkthrough for the bases of the project.
+- I relied on CI's Moments Walkthrough for the bases of the project with the additon of news(Chronicles) and events.
 
 ### Content
 
-- Content in bios and posts were done by me. ChatGPT was used for the content in the About Us page.
+- Content in bios and posts were done by me. ChatGPT was used for the content in the about us, events, and news summary.
 
 ### Media
 
