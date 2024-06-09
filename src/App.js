@@ -20,6 +20,10 @@ import ChronicleCreateForm from "./pages/chronicles/ChronicleCreateForm";
 import ChroniclePage from "./pages/chronicles/ChroniclePage";
 import ChroniclesPage from "./pages/chronicles/ChroniclesPage";
 import ChronicleEditForm from "./pages/chronicles/ChronicleEditForm";
+import EventCreateForm from "./pages/events/EventCreateForm";
+import EventPage from "./pages/events/EventPage";
+import EventsPage from "./pages/events/EventsPage";
+import EventEditForm from "./pages/events/EventsEditForm";
 
 function App() {
   const currentUser = useCurrentUser();
@@ -46,6 +50,10 @@ function App() {
           <Route exact path="/news/:id" render={() => <ChroniclePage />} />
           <Route exact path="/news" render={() => <ChroniclesPage />} />
           <Route exact path="/news/:id/edit" render={() => <ChronicleEditForm />} />
+          <Route exact path="/events/create" render={() => <EventCreateForm />} />
+          <Route exact path="/events/:id" render={() => <EventPage />} />
+          <Route exact path="/events" render={() => <EventsPage />} />
+          <Route exact path="/events/:id/edit" render={() => <EventEditForm />} />
           <Route exact path="/aboutus" render={() => <AboutUs />} />
           <Route render={() => <NotFound />} />
         </Switch>

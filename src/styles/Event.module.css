@@ -1,4 +1,4 @@
-.Chronicle {
+.Event {
   background-color: #ead7d7;
   border: 1px solid #dadadf;
   border-radius: 10px;
@@ -6,7 +6,7 @@
   text-align: center;
 }
 
-.Chronicle figure,
+.Event figure,
 h5 {
   margin: 0 0;
 }
