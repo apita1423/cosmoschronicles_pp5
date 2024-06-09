@@ -9,9 +9,9 @@ import { axiosRes } from "../../api/axiosDefault";
 import CommentEditForm from "./CommentEditForm";
 
 const Comment = (props) => {
-   const { profile_id, profile_image, owner, updated_at, content, id, setPost, setComments } = props;
-   
-   const [showEditForm, setShowEditForm] = useState(false);
+  const { profile_id, profile_image, owner, updated_at, content, id, setPost, setComments } = props;
+
+  const [showEditForm, setShowEditForm] = useState(false);
 
   const currentUser = useCurrentUser();
   const is_owner = currentUser?.username === owner;
@@ -32,7 +32,7 @@ const Comment = (props) => {
         ...prevComments,
         results: prevComments.results.filter((comment) => comment.id !== id),
       }));
-    } catch (err) {}
+    } catch (err) { }
   };
 
   return (

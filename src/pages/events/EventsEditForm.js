@@ -12,7 +12,6 @@ import btnStyles from "../../styles/Button.module.css";
 import { useHistory, useParams } from "react-router";
 import { axiosReq } from "../../api/axiosDefault";
 
-
 function EventEditForm() {
     const [errors, setErrors] = useState({});
 
@@ -36,9 +35,9 @@ function EventEditForm() {
         const handleMount = async () => {
             try {
                 const { data } = await axiosReq.get(`/events/${id}/`);
-                const { title, description, date, time, city, country, audience, price, event_url, is_owner, } = data;
+                const { title, description, date, time, city, country, audience, price, event_url, is_owner } = data;
 
-                is_owner ? setEventsData({ title, description, date, time, city, country, audience, price,event_url }) : history.push("/");
+                is_owner ? setEventsData({ title, description, date, time, city, country, audience, price, event_url }) : history.push("/");
             } catch (err) {
                 // console.log(err);
             }
@@ -54,7 +53,6 @@ function EventEditForm() {
         });
     };
 
-
     const handleSubmit = async (event) => {
         event.preventDefault();
         const formData = new FormData();
@@ -68,7 +66,6 @@ function EventEditForm() {
         formData.append("audience", audience);
         formData.append("price", price);
         formData.append("event_url", event_url);
-
 
         try {
             await axiosReq.put(`/events/${id}/`, formData);
@@ -84,7 +81,9 @@ function EventEditForm() {
 
     return (
         <Container className={`${appStyles.Content} ${styles.Container}`}>
-            <h1 className="text-center"><i className="fas fa-satellite"></i>Add Event<i className="fas fa-satellite"></i></h1>
+            <h1 className="text-center">
+                <i className="fas fa-satellite"></i>Add Event<i className="fas fa-satellite"></i>
+            </h1>
             <br />
             <Form onSubmit={handleSubmit}>
                 <Form.Group>
@@ -177,9 +176,13 @@ function EventEditForm() {
                     </Alert>
                 ))}
 
-                <Button className={`${btnStyles.Button} ${btnStyles.Purple}`} onClick={() => history.goBack()}>Cancel</Button>
+                <Button className={`${btnStyles.Button} ${btnStyles.Purple}`} onClick={() => history.goBack()}>
+                    Cancel
+                </Button>
 
-                <Button className={`${btnStyles.Button} ${btnStyles.Purple}`} type="submit">Create Event</Button>
+                <Button className={`${btnStyles.Button} ${btnStyles.Purple}`} type="submit">
+                    Create Event
+                </Button>
             </Form>
         </Container>
     );
