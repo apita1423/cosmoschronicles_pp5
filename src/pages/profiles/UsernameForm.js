@@ -44,7 +44,7 @@ const UsernameForm = () => {
       }));
       history.goBack();
     } catch (err) {
-      console.log(err);
+      // console.log(err);
       setErrors(err.response?.data);
     }
   };
@@ -63,10 +63,10 @@ const UsernameForm = () => {
                 {message}
               </Alert>
             ))}
-            <Button className={`${btnStyles.Button} ${btnStyles.Blue}`} onClick={() => history.goBack()}>
+            <Button className={`${btnStyles.Button} ${btnStyles.Purple}`} onClick={() => history.goBack()}>
               Cancel
             </Button>
-            <Button className={`${btnStyles.Button} ${btnStyles.Blue}`} type="submit">
+            <Button className={`${btnStyles.Button} ${btnStyles.Purple}`} type="submit">
               Save
             </Button>
           </Form>

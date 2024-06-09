@@ -37,7 +37,7 @@ function PostEditForm() {
 
         is_owner ? setPostData({ title, content, image }) : history.push("/");
       } catch (err) {
-        console.log(err);
+        // console.log(err);
       }
     };
 
@@ -77,7 +77,7 @@ function PostEditForm() {
 
       history.push(`/posts/${id}`);
     } catch (err) {
-      console.log(err);
+      // console.log(err);
 
       if (err.response?.status !== 401) {
         setErrors(err.response?.data);
@@ -106,10 +106,10 @@ function PostEditForm() {
         </Alert>
       ))}
 
-      <Button className={`${btnStyles.Button} ${btnStyles.Blue}`} onClick={() => history.goBack()}>
+      <Button className={`${btnStyles.Button} ${btnStyles.Purple}`} onClick={() => history.goBack()}>
         Cancel
       </Button>
-      <Button className={`${btnStyles.Button} ${btnStyles.Blue}`} type="submit">
+      <Button className={`${btnStyles.Button} ${btnStyles.Purple}`} type="submit">
         Save
       </Button>
     </div>
@@ -125,7 +125,7 @@ function PostEditForm() {
                     <Image className={appStyles.Image} src={image} rounded />
                   </figure>
                   <div>
-                    <Form.Label className={`${btnStyles.Button} ${btnStyles.Blue} btn`} htmlFor="image-upload">
+                    <Form.Label className={`${btnStyles.Button} ${btnStyles.Purple} btn`} htmlFor="image-upload">
                       Change the image
                     </Form.Label>
                   </div>

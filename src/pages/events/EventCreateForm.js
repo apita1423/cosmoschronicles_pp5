@@ -155,9 +155,9 @@ function EventCreateForm() {
                     </Alert>
                 ))}
 
-                <Button className={`${btnStyles.Button} ${btnStyles.Blue}`} onClick={() => history.goBack()}>Cancel</Button>
+                <Button className={`${btnStyles.Button} ${btnStyles.Purple}`} onClick={() => history.goBack()}>Cancel</Button>
 
-                <Button className={`${btnStyles.Button} ${btnStyles.Blue}`} type="submit">Create Event</Button>
+                <Button className={`${btnStyles.Button} ${btnStyles.Purple}`} type="submit">Create Event</Button>
             </Form>
         </Container>
     );

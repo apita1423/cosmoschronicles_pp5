@@ -65,7 +65,7 @@ function ChronicleCreateForm() {
             const { data } = await axiosReq.post("/news/", formData);
             history.push(`/news/${data.id}`);
         } catch (err) {
-            console.log(err);
+            // console.log(err);
             if (err.response?.status !== 401) {
                 setErrors(err.response?.data);
             }
@@ -143,9 +143,9 @@ function ChronicleCreateForm() {
                 </Alert>
             ))}
 
-            <Button className={`${btnStyles.Button} ${btnStyles.Blue}`} onClick={() => history.goBack()}>Cancel</Button>
+            <Button className={`${btnStyles.Button} ${btnStyles.Purple}`} onClick={() => history.goBack()}>Cancel</Button>
 
-            <Button className={`${btnStyles.Button} ${btnStyles.Blue}`} type="submit">Post News</Button>
+            <Button className={`${btnStyles.Button} ${btnStyles.Purple}`} type="submit">Post News</Button>
         </div>
     );
 
@@ -161,7 +161,7 @@ function ChronicleCreateForm() {
                                         <Image className={appStyles.Image} src={image} rounded />
                                     </figure>
                                     <div>
-                                        <Form.Label className={`${btnStyles.Button} ${btnStyles.Blue} btn`} htmlFor="image-upload">Change the Image</Form.Label>
+                                        <Form.Label className={`${btnStyles.Button} ${btnStyles.Purple} btn`} htmlFor="image-upload">Change the Image</Form.Label>
                                     </div>
                                 </>
                             ) : (

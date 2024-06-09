@@ -48,11 +48,11 @@ function App() {
           <Route exact path="/profiles/:id/edit" render={() => <ProfileEditForm />} />
           <Route exact path="/news/create" render={() => <ChronicleCreateForm />} />
           <Route exact path="/news/:id" render={() => <ChroniclePage />} />
-          <Route exact path="/news" render={() => <ChroniclesPage />} />
+          <Route exact path="/news" render={() => <ChroniclesPage message="No results found." />} />
           <Route exact path="/news/:id/edit" render={() => <ChronicleEditForm />} />
           <Route exact path="/events/create" render={() => <EventCreateForm />} />
           <Route exact path="/events/:id" render={() => <EventPage />} />
-          <Route exact path="/events" render={() => <EventsPage />} />
+          <Route exact path="/events" render={() => <EventsPage message="No results found." />} />
           <Route exact path="/events/:id/edit" render={() => <EventEditForm />} />
           <Route exact path="/aboutus" render={() => <AboutUs />} />
           <Route render={() => <NotFound />} />

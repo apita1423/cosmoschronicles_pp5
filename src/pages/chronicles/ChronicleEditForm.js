@@ -44,7 +44,7 @@ function ChronicleEditForm() {
 
                 is_owner ? setNewsData({ title, description, author, published_on, image, image_copyright, category }) : history.push("/");
             } catch (err) {
-                console.log(err);
+                // console.log(err);
             }
         };
 
@@ -87,7 +87,7 @@ function ChronicleEditForm() {
 
             history.push(`/news/${id}`);
         } catch (err) {
-            console.log(err);
+            // console.log(err);
 
             if (err.response?.status !== 401) {
                 setErrors(err.response?.data);
@@ -166,9 +166,9 @@ function ChronicleEditForm() {
                 </Alert>
             ))}
 
-            <Button className={`${btnStyles.Button} ${btnStyles.Blue}`} onClick={() => history.goBack()}>Cancel</Button>
+            <Button className={`${btnStyles.Button} ${btnStyles.Purple}`} onClick={() => history.goBack()}>Cancel</Button>
 
-            <Button className={`${btnStyles.Button} ${btnStyles.Blue}`} type="submit">Post News</Button>
+            <Button className={`${btnStyles.Button} ${btnStyles.Purple}`} type="submit">Post News</Button>
         </div>
     );
 
@@ -184,7 +184,7 @@ function ChronicleEditForm() {
                                         <Image className={appStyles.Image} src={image} rounded />
                                     </figure>
                                     <div>
-                                        <Form.Label className={`${btnStyles.Button} ${btnStyles.Blue} btn`} htmlFor="image-upload">Change the Image</Form.Label>
+                                        <Form.Label className={`${btnStyles.Button} ${btnStyles.Purple} btn`} htmlFor="image-upload">Change the Image</Form.Label>
                                     </div>
                                 </>
                             ) : (

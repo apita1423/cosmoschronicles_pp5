@@ -40,7 +40,7 @@ function EventEditForm() {
 
                 is_owner ? setEventsData({ title, description, date, time, city, country, audience, price,event_url }) : history.push("/");
             } catch (err) {
-                console.log(err);
+                // console.log(err);
             }
         };
 
@@ -74,7 +74,7 @@ function EventEditForm() {
             await axiosReq.put(`/events/${id}/`, formData);
             history.push(`/events/${id}`);
         } catch (err) {
-            console.log(err);
+            // console.log(err);
 
             if (err.response?.status !== 401) {
                 setErrors(err.response?.data);
@@ -177,9 +177,9 @@ function EventEditForm() {
                     </Alert>
                 ))}
 
-                <Button className={`${btnStyles.Button} ${btnStyles.Blue}`} onClick={() => history.goBack()}>Cancel</Button>
+                <Button className={`${btnStyles.Button} ${btnStyles.Purple}`} onClick={() => history.goBack()}>Cancel</Button>
 
-                <Button className={`${btnStyles.Button} ${btnStyles.Blue}`} type="submit">Create Event</Button>
+                <Button className={`${btnStyles.Button} ${btnStyles.Purple}`} type="submit">Create Event</Button>
             </Form>
         </Container>
     );

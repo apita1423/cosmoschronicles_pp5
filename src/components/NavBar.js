@@ -21,7 +21,7 @@ const NavBar = () => {
       setCurrentUser(null);
       removeTokenTimestamp();
     } catch (err) {
-      console.log(err);
+      // console.log(err);
     }
   };
 
@@ -32,8 +32,11 @@ const NavBar = () => {
   )
 
   const loggedInIcons = <>
-    <NavLink className={styles.NavLink} to={`/profiles/${currentUser?.profile_id}`}>
-      <Avatar src={currentUser?.profile_image} text="Profile" height={40} />
+    <NavLink className={styles.NavLink} activeClassName={styles.Active} to="/news/create">
+      <i className="far fa-newspaper"></i>Add News
+    </NavLink>
+    <NavLink className={styles.NavLink} activeClassName={styles.Active} to="/events/create">
+      <i className="fas fa-calendar-alt"></i>Add Event
     </NavLink>
     <NavLink className={styles.NavLink} activeClassName={styles.Active} to="/feed">
       <i className="fas fa-stream"></i>Feed
@@ -41,14 +44,16 @@ const NavBar = () => {
     <NavLink className={styles.NavLink} activeClassName={styles.Active} to="/liked">
       <i className="fas fa-heart"></i>Liked
     </NavLink>
-    <NavLink className={styles.NavLink} activeClassName={styles.Active} to="/news/create">
-      <i className="far fa-newspaper"></i>Add News
+
+    <NavLink className={styles.NavLink} to={`/profiles/${currentUser?.profile_id}`}>
+      <Avatar src={currentUser?.profile_image} text="Profile" height={40} />
     </NavLink>
     <NavLink className={styles.NavLink} to="/" onClick={handleLogOut}>
       <i className="fas fa-sign-out-alt"></i>Log out
     </NavLink>
   </>
 
+ 
   const loggedOutIcons = (
     <>
       <NavLink className={styles.NavLink} activeClassName={styles.Active} to="/aboutus">

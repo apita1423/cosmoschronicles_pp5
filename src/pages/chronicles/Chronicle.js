@@ -36,7 +36,7 @@ const Chronicle = (props) => {
             await axiosRes.delete(`/news/${id}/`);
             history.goBack();
         } catch (err) {
-            console.log(err);
+            // console.log(err);
         }
     };
 
