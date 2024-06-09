@@ -2,10 +2,12 @@
   background-color: #15034b;
   background: rgb(112, 17, 97);
   background: radial-gradient(circle, rgba(112, 17, 97, 1) 0%, rgba(21, 3, 75, 1) 100%);
+
   /* border: 1px solid #dadadf */
 }
 
 .NavLink {
+  min-width: fit-content;
   padding: 5px;
   color: white;
 }
