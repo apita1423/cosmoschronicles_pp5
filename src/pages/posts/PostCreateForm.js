@@ -73,7 +73,7 @@ function PostCreateForm() {
     <div className="text-center">
       <Form.Group>
         <Form.Label>Title</Form.Label>
-        <Form.Control type="text" name="title" value={title} onChange={handleChange}></Form.Control>
+        <Form.Control type="text" name="title" value={title} onChange={handleChange} aria-label="title"></Form.Control>
       </Form.Group>
       {errors?.title?.map((message, idx) => (
         <Alert variant="warning" key={idx}>
@@ -83,7 +83,7 @@ function PostCreateForm() {
 
       <Form.Group>
         <Form.Label>Content</Form.Label>
-        <Form.Control as="textarea" rows={6} name="content" value={content} onChange={handleChange}></Form.Control>
+        <Form.Control as="textarea" rows={6} name="content" value={content} onChange={handleChange} aria-label="content"></Form.Control>
       </Form.Group>
       {errors?.content?.map((message, idx) => (
         <Alert variant="warning" key={idx}>

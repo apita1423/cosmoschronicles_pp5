@@ -46,7 +46,7 @@ const RegisterForm = () => {
           <Form onSubmit={handleSubmit}>
             <Form.Group controlId="username">
               <Form.Label className="d-none">username</Form.Label>
-              <Form.Control className={styles.Input} type="text" placeholder="Username" name="username" value={username} onChange={handleChange} />
+              <Form.Control className={styles.Input} type="text" placeholder="Username" name="username" value={username} onChange={handleChange} aria-label="username" />
             </Form.Group>
             {errors.username?.map((message, idx) => (
               <Alert variant="warning" key={idx}>
@@ -56,7 +56,7 @@ const RegisterForm = () => {
 
             <Form.Group controlId="password1">
               <Form.Label className="d-none">password</Form.Label>
-              <Form.Control className={styles.Input} type="password" placeholder="Password" name="password1" value={password1} onChange={handleChange} />
+              <Form.Control className={styles.Input} type="password" placeholder="Password" name="password1" value={password1} onChange={handleChange} aria-label="password" />
             </Form.Group>
             {errors.password1?.map((message, idx) => (
               <Alert variant="warning" key={idx}>
@@ -66,7 +66,7 @@ const RegisterForm = () => {
 
             <Form.Group controlId="password2">
               <Form.Label className="d-none">confirm Password</Form.Label>
-              <Form.Control className={styles.Input} type="password" placeholder="Confirm Password" name="password2" value={password2} onChange={handleChange} />
+              <Form.Control className={styles.Input} type="password" placeholder="Confirm Password" name="password2" value={password2} onChange={handleChange} aria-label="password2"/>
             </Form.Group>
             {errors.password2?.map((message, idx) => (
               <Alert variant="warning" key={idx}>

@@ -44,7 +44,6 @@ const NavBar = () => {
     <NavLink className={styles.NavLink} activeClassName={styles.Active} to="/liked">
       <i className="fas fa-heart"></i>Liked
     </NavLink>
-
     <NavLink className={styles.NavLink} to={`/profiles/${currentUser?.profile_id}`}>
       <Avatar src={currentUser?.profile_image} text="Profile" height={40} />
     </NavLink>

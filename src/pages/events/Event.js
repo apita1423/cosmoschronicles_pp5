@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "../../styles/Event.module.css";
 import { useCurrentUser } from "../../contexts/CurrentUserContext";
-import { Card, Media } from "react-bootstrap";
+import { Card, Media, Container } from "react-bootstrap";
 import { Link, useHistory } from "react-router-dom";
 import Avatar from "../../components/Avatar";
 import { axiosRes } from "../../api/axiosDefault";
@@ -44,7 +44,7 @@ const Event = (props) => {
     };
 
     return (
-        <Card className={styles.Event}>
+        <Container className={styles.Event}>
             <Card.Body>
                 <Media className="align-items-center justify-content-between">
                     <Link to={`/profiles/${profile_id}`}>
@@ -61,14 +61,14 @@ const Event = (props) => {
             <Card.Body>
                 <h1>{title}</h1>
                 <br />
-                <p>Description: {description}</p>
-                <p>When: {date} | {time}</p>
-                <p>Where: {city} | {country}</p>
-                <p>Who: {audience}</p>
-                <p>How much? {price}</p>
-                <p>Want more information? Click Here: <a target="_blank" rel="noreferrer" href={event_url}>Event Link</a></p>
+                <p><strong>Description: </strong> {description}</p>
+                <p><strong>Date: </strong> {date} | <strong>Time: </strong>{time}</p>
+                <p><strong>City: </strong>{city} | <strong>Country: </strong>{country}</p>
+                <p><strong>Audience: </strong> {audience}</p>
+                <p><strong>Price: </strong> {price}</p>
+                <p><strong>Want more information? </strong>Click Here: <a target="_blank" rel="noreferrer" href={event_url}>Event Link</a></p>
             </Card.Body>
-        </Card>
+        </Container>
     );
 };
 
