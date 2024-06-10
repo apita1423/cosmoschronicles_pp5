@@ -9,7 +9,6 @@ import axios from "axios";
 import useClickOutsideToggle from "../hooks/useClickOutsideToggle";
 import { removeTokenTimestamp } from "../utils/utils";
 import DropdownToggle from "react-bootstrap/esm/DropdownToggle";
-import DropdownMenu from "react-bootstrap/esm/DropdownMenu";
 
 const NavBar = () => {
   const currentUser = useCurrentUser();
@@ -28,20 +27,26 @@ const NavBar = () => {
   };
 
   const addPostIcon = (
-    <Dropdown>
-      <DropdownToggle>Updates
+    <Dropdown className={styles.NavLink}>
+      <DropdownToggle className={styles.DropdownToggle}>Add Items
 
-        <DropdownMenu className={styles.DropdownMenu}>
+        <Dropdown.Menu className={styles.DropdownColours}>
+          <Dropdown.Item>
           <NavLink className={styles.NavLink} activeClassName={styles.Active} to="/posts/create">
           <i className="far fa-plus-square"></i>Add Post
           </NavLink>
+          </Dropdown.Item>
+          <Dropdown.Item>
           <NavLink className={styles.NavLink} activeClassName={styles.Active} to="/news/create">
             <i className="fas fa-folder-plus"></i>Add News
           </NavLink>
+          </Dropdown.Item>
+          <Dropdown.Item>
           <NavLink className={styles.NavLink} activeClassName={styles.Active} to="/events/create">
             <i className="fas fa-calendar-plus"></i>Add Event
           </NavLink>
-        </DropdownMenu>
+        </Dropdown.Item>
+        </Dropdown.Menu>
         
     </DropdownToggle>
     </Dropdown >
