@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar, Container, Nav, OverlayTrigger, Tooltip } from "react-bootstrap";
+import { Navbar, Container, Nav, OverlayTrigger, Tooltip, Dropdown } from "react-bootstrap";
 import logo from "../assets/cc-logo.png";
 import styles from "../styles/NavBar.module.css";
 import { NavLink } from "react-router-dom";
@@ -8,6 +8,8 @@ import Avatar from "./Avatar";
 import axios from "axios";
 import useClickOutsideToggle from "../hooks/useClickOutsideToggle";
 import { removeTokenTimestamp } from "../utils/utils";
+import DropdownToggle from "react-bootstrap/esm/DropdownToggle";
+import DropdownMenu from "react-bootstrap/esm/DropdownMenu";
 
 const NavBar = () => {
   const currentUser = useCurrentUser();
@@ -26,18 +28,26 @@ const NavBar = () => {
   };
 
   const addPostIcon = (
-    <NavLink className={styles.NavLink} activeClassName={styles.Active} to="/posts/create">
-      <i className="far fa-plus-square"></i>Add Post
-    </NavLink>
+    <Dropdown>
+      <DropdownToggle>Updates
+
+        <DropdownMenu className={styles.DropdownMenu}>
+          <NavLink className={styles.NavLink} activeClassName={styles.Active} to="/posts/create">
+          <i className="far fa-plus-square"></i>Add Post
+          </NavLink>
+          <NavLink className={styles.NavLink} activeClassName={styles.Active} to="/news/create">
+            <i className="fas fa-folder-plus"></i>Add News
+          </NavLink>
+          <NavLink className={styles.NavLink} activeClassName={styles.Active} to="/events/create">
+            <i className="fas fa-calendar-plus"></i>Add Event
+          </NavLink>
+        </DropdownMenu>
+        
+    </DropdownToggle>
+    </Dropdown >
   )
 
   const loggedInIcons = <>
-    <NavLink className={styles.NavLink} activeClassName={styles.Active} to="/news/create">
-      <i className="far fa-newspaper"></i>Add News
-    </NavLink>
-    <NavLink className={styles.NavLink} activeClassName={styles.Active} to="/events/create">
-      <i className="fas fa-calendar-alt"></i>Add Event
-    </NavLink>
     <NavLink className={styles.NavLink} activeClassName={styles.Active} to="/news">
       <i className="far fa-newspaper"></i>News
     </NavLink>

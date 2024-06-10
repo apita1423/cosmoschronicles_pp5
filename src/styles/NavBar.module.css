@@ -9,7 +9,10 @@
 .NavLink {
   min-width: fit-content;
   padding: 5px;
-  color: white;
+}
+
+.DropdownMenu {
+  align-items: flex-start;
 }
 
 .Active i {
