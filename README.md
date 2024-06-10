@@ -78,7 +78,11 @@ Cosmos Chronicles is my fifth project with Code Institute. The idea for Cosmos C
 
 ### User Demographics
 
+Cosmos Chronicles was designed for anything space enthusiants. Who can use this site? Anyone from astrobiologists to librarians who passions are a bit more then books. 
+
 ### Audience
+
+Cosmos Chronicles is for anyone whose passion is, as they say in Star Trek, "The Final Frontier"!
 
 ### User Stories
 
@@ -88,7 +92,7 @@ Cosmos Chronicles is my fifth project with Code Institute. The idea for Cosmos C
 
 ### Colour Scheme
 
- - I wanted the colours of the site to be space related. I wanted to also try out gradient as a background colour, which allowed it to look a bit like a galaxy. My favourite colour is orange, so I wanted to add that as well. I was having a bit of trouble with the gradient due to having certain colours different depending on where they were on the page. 
+ I wanted the colours of the site to be space related. I wanted to also try out gradient as a background colour, which allowed it to look a bit like a galaxy. My favourite colour is orange, so I wanted to add that as well. I was having a bit of trouble with the gradient due to having certain colours different depending on where they were on the page. 
 
  ![Gradient Colours](/src/assets/readme-images/gradient-colour.png)
 
