@@ -26,40 +26,40 @@ import EventsPage from "./pages/events/EventsPage";
 import EventEditForm from "./pages/events/EventsEditForm";
 
 function App() {
-  const currentUser = useCurrentUser();
-  const profile_id = currentUser?.profile_id || "";
+    const currentUser = useCurrentUser();
+    const profile_id = currentUser?.profile_id || "";
 
-  return (
-    <div className={styles.App}>
-      <NavBar />
-      <Container className={styles.Main}>
-        <Switch>
-          <Route exact path="/" render={() => <PostsPage message="No results found. Adjust your search keyword." />} />
-          <Route exact path="/feed" render={() => <PostsPage message="No results found. Adjust your search keyword or follow a user." filter={`owner__followed__owner__profile=${profile_id}&`} />} />
-          <Route exact path="/liked" render={() => <PostsPage message="No results found. Adjust your search keyword or like a post." filter={`likes__owner__profile=${profile_id}&ordering=-likes__created_at&`} />} />
-          <Route exact path="/login" render={() => <LogInForm />} />
-          <Route exact path="/register" render={() => <RegisterForm />} />
-          <Route exact path="/posts/create" render={() => <PostCreateForm />} />
-          <Route exact path="/posts/:id" render={() => <PostPage />} />
-          <Route exact path="/posts/:id/edit" render={() => <PostEditForm />} />
-          <Route exact path="/profiles/:id" render={() => <ProfilePage />} />
-          <Route exact path="/profiles/:id/edit/username" render={() => <UsernameForm />} />
-          <Route exact path="/profiles/:id/edit/password" render={() => <UserPasswordForm />} />
-          <Route exact path="/profiles/:id/edit" render={() => <ProfileEditForm />} />
-          <Route exact path="/news/create" render={() => <ChronicleCreateForm />} />
-          <Route exact path="/news/:id" render={() => <ChroniclePage />} />
-          <Route exact path="/news" render={() => <ChroniclesPage message="No results found." />} />
-          <Route exact path="/news/:id/edit" render={() => <ChronicleEditForm />} />
-          <Route exact path="/events/create" render={() => <EventCreateForm />} />
-          <Route exact path="/events/:id" render={() => <EventPage />} />
-          <Route exact path="/events" render={() => <EventsPage message="No results found." />} />
-          <Route exact path="/events/:id/edit" render={() => <EventEditForm />} />
-          <Route exact path="/aboutus" render={() => <AboutUs />} />
-          <Route render={() => <NotFound />} />
-        </Switch>
-      </Container>
-    </div>
-  );
+    return (
+        <div className={styles.App}>
+            <NavBar />
+            <Container className={styles.Main}>
+                <Switch>
+                    <Route exact path="/" render={() => <PostsPage message="No results found. Adjust your search keyword." />} />
+                    <Route exact path="/feed" render={() => <PostsPage message="No results found. Adjust your search keyword or follow a user." filter={`owner__followed__owner__profile=${profile_id}&`} />} />
+                    <Route exact path="/liked" render={() => <PostsPage message="No results found. Adjust your search keyword or like a post." filter={`likes__owner__profile=${profile_id}&ordering=-likes__created_at&`} />} />
+                    <Route exact path="/login" render={() => <LogInForm />} />
+                    <Route exact path="/register" render={() => <RegisterForm />} />
+                    <Route exact path="/posts/create" render={() => <PostCreateForm />} />
+                    <Route exact path="/posts/:id" render={() => <PostPage />} />
+                    <Route exact path="/posts/:id/edit" render={() => <PostEditForm />} />
+                    <Route exact path="/profiles/:id" render={() => <ProfilePage />} />
+                    <Route exact path="/profiles/:id/edit/username" render={() => <UsernameForm />} />
+                    <Route exact path="/profiles/:id/edit/password" render={() => <UserPasswordForm />} />
+                    <Route exact path="/profiles/:id/edit" render={() => <ProfileEditForm />} />
+                    <Route exact path="/news/create" render={() => <ChronicleCreateForm />} />
+                    <Route exact path="/news/:id" render={() => <ChroniclePage />} />
+                    <Route exact path="/news" render={() => <ChroniclesPage message="No results found." />} />
+                    <Route exact path="/news/:id/edit" render={() => <ChronicleEditForm />} />
+                    <Route exact path="/events/create" render={() => <EventCreateForm />} />
+                    <Route exact path="/events/:id" render={() => <EventPage />} />
+                    <Route exact path="/events" render={() => <EventsPage message="No results found." />} />
+                    <Route exact path="/events/:id/edit" render={() => <EventEditForm />} />
+                    <Route exact path="/aboutus" render={() => <AboutUs />} />
+                    <Route render={() => <NotFound />} />
+                </Switch>
+            </Container>
+        </div>
+    );
 }
 
 export default App;

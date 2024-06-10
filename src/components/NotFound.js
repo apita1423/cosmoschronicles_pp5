@@ -4,11 +4,11 @@ import styles from "../styles/NotFound.module.css";
 import Asset from "./Asset";
 
 const notFound = () => {
-  return (
-    <div className={styles.NotFound}>
-      <Asset src={NotFound} message={"404 Error: Sorry, this page is in a different galaxy!"} />
-    </div>
-  );
+    return (
+        <div className={styles.NotFound}>
+            <Asset src={NotFound} message={"404 Error: Sorry, this page is in a different galaxy!"} />
+        </div>
+    );
 };
 
 export default notFound;

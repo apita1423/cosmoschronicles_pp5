@@ -96,7 +96,7 @@ function ChronicleCreateForm() {
 
             <Form.Group>
                 <Form.Label>Author</Form.Label>
-                <Form.Control type="text" name="author" value={author} onChange={handleChange} aria-label="author"/>
+                <Form.Control type="text" name="author" value={author} onChange={handleChange} aria-label="author" />
             </Form.Group>
             {errors?.author?.map((message, idx) => (
                 <Alert variant="warning" key={idx}>
@@ -127,15 +127,15 @@ function ChronicleCreateForm() {
             <Form.Group>
                 <Form.Label>Category</Form.Label>
                 <Form.Control as="select" name="category" value={category} onChange={handleChange} aria-label="category">
-                <option>Choose a Category</option>
-                <option value="space news">Space News</option>
-                <option value="exploration">Exploration</option>
-                <option value="stargazing tips">Stargazing Tips</option>
-                <option value="education">Education</option>
-                <option value="space missions">Space Missions</option>
-                <option value="astronomy events">Astronomy Events</option>
-                <option value="technology">Technology</option>
-            </Form.Control>
+                    <option>Choose a Category</option>
+                    <option value="space news">Space News</option>
+                    <option value="exploration">Exploration</option>
+                    <option value="stargazing tips">Stargazing Tips</option>
+                    <option value="education">Education</option>
+                    <option value="space missions">Space Missions</option>
+                    <option value="astronomy events">Astronomy Events</option>
+                    <option value="technology">Technology</option>
+                </Form.Control>
             </Form.Group>
             {errors?.category?.map((message, idx) => (
                 <Alert variant="warning" key={idx}>

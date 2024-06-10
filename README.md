@@ -222,21 +222,12 @@ Images sourced from Pexel
 - [Space Image 15](https://www.pexels.com/photo/eye-level-photo-of-train-tracks-surrounded-with-trees-1448899/)
 - [Space Image 16](https://www.pexels.com/photo/photo-of-beach-and-palm-trees-1457812/)
 
-Images from Canva
 
-- ![Canva Image 1](/src/assets/readme-images/canva-clock.png)
-- ![Canva Image 2](/src/assets/readme-images/profile-1.png)
-- ![Canva Image 3](/src/assets/readme-images/profile-2.png)
-- ![Canva Image 4](/src/assets/readme-images/profile-3.png)
-- ![Canva Image 5](/src/assets/readme-images/profile-4.png)
-- ![Canva Image 6](/src/assets/readme-images/profile-5.png)
-- ![Canva Image 7](/src/assets/readme-images/profile-6.png)
-- ![Canva Image 8](/src/assets/readme-images/profile-7.png)
 
 ### Acknowledgments
 
 - Again, and for the last time, I'm truly grateful for my mentor, Martina. She has been the best mentor someone could ask for. 
 
-- Oisin from Tutor Support, who helped with a few issues that came up. 
+- Oisin and John from Tutor Support, who helped with a few "TINY" issues that came up. 
 
 - My husband who has encouraged me throughout the course, and, of course, my animals who have been okay with me being in front of a computer and not being a bed for them to relax. After this I can go back to being a bed. 

@@ -32,23 +32,23 @@ const NavBar = () => {
 
         <Dropdown.Menu className={styles.DropdownColours}>
           <Dropdown.Item>
-          <NavLink className={styles.NavLink} activeClassName={styles.Active} to="/posts/create">
-          <i className="far fa-plus-square"></i>Add Post
-          </NavLink>
+            <NavLink className={styles.NavLink} activeClassName={styles.Active} to="/posts/create">
+              <i className="far fa-plus-square"></i>Add Post
+            </NavLink>
           </Dropdown.Item>
           <Dropdown.Item>
-          <NavLink className={styles.NavLink} activeClassName={styles.Active} to="/news/create">
-            <i className="fas fa-folder-plus"></i>Add News
-          </NavLink>
+            <NavLink className={styles.NavLink} activeClassName={styles.Active} to="/news/create">
+              <i className="fas fa-folder-plus"></i>Add News
+            </NavLink>
           </Dropdown.Item>
           <Dropdown.Item>
-          <NavLink className={styles.NavLink} activeClassName={styles.Active} to="/events/create">
-            <i className="fas fa-calendar-plus"></i>Add Event
-          </NavLink>
-        </Dropdown.Item>
+            <NavLink className={styles.NavLink} activeClassName={styles.Active} to="/events/create">
+              <i className="fas fa-calendar-plus"></i>Add Event
+            </NavLink>
+          </Dropdown.Item>
         </Dropdown.Menu>
-        
-    </DropdownToggle>
+
+      </DropdownToggle>
     </Dropdown >
   )
 
@@ -69,48 +69,48 @@ const NavBar = () => {
       <Avatar src={currentUser?.profile_image} text="Profile" height={40} />
     </NavLink>
     <OverlayTrigger placement="bottom-start" overlay={<Tooltip>Log Out</Tooltip>}>
-    <NavLink className={styles.NavLink} to="/" onClick={handleLogOut}>
-      <i className="fas fa-sign-out-alt"></i>
-    </NavLink>
-  </OverlayTrigger>
-  </>
-
- 
-  const loggedOutIcons = (
-  <>
-    <NavLink className={styles.NavLink} activeClassName={styles.Active} to="/aboutus">
-      <i className="fas fa-user-astronaut"></i> About Us
-    </NavLink>
-    <NavLink className={styles.NavLink} activeClassName={styles.Active} to="/login">
-      <i className="fas fa-sign-in-alt"></i> Log in
-    </NavLink>
-    <NavLink className={styles.NavLink} activeClassName={styles.Active} to="/register">
-      <i className="fas fa-user-plus"></i> Register
-    </NavLink>
-  </>
-);
-
-return (
-  <Navbar expanded={expanded} className={styles.NavBar} expand="md" fixed="top">
-    <Container>
-      <NavLink to="/">
-        <Navbar.Brand>
-          <img src={logo} alt="logo" height="70" />
-        </Navbar.Brand>
+      <NavLink className={styles.NavLink} to="/" onClick={handleLogOut}>
+        <i className="fas fa-sign-out-alt"></i>
       </NavLink>
-      {currentUser && addPostIcon}
-      <Navbar.Toggle ref={ref} onClick={() => setExpanded(!expanded)} aria-controls="basic-navbar-nav" />
-      <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="ml-auto text-left">
-          <NavLink exact className={styles.NavLink} activeClassName={styles.Active} to="/">
-            <i className="fas fa-home"></i> Home
-          </NavLink>
-          {currentUser ? loggedInIcons : loggedOutIcons}
-        </Nav>
-      </Navbar.Collapse>
-    </Container>
-  </Navbar>
-);
+    </OverlayTrigger>
+  </>
+
+
+  const loggedOutIcons = (
+    <>
+      <NavLink className={styles.NavLink} activeClassName={styles.Active} to="/aboutus">
+        <i className="fas fa-user-astronaut"></i> About Us
+      </NavLink>
+      <NavLink className={styles.NavLink} activeClassName={styles.Active} to="/login">
+        <i className="fas fa-sign-in-alt"></i> Log in
+      </NavLink>
+      <NavLink className={styles.NavLink} activeClassName={styles.Active} to="/register">
+        <i className="fas fa-user-plus"></i> Register
+      </NavLink>
+    </>
+  );
+
+  return (
+    <Navbar expanded={expanded} className={styles.NavBar} expand="md" fixed="top">
+      <Container>
+        <NavLink to="/">
+          <Navbar.Brand>
+            <img src={logo} alt="logo" height="70" />
+          </Navbar.Brand>
+        </NavLink>
+        {currentUser && addPostIcon}
+        <Navbar.Toggle ref={ref} onClick={() => setExpanded(!expanded)} aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="ml-auto text-left">
+            <NavLink exact className={styles.NavLink} activeClassName={styles.Active} to="/">
+              <i className="fas fa-home"></i> Home
+            </NavLink>
+            {currentUser ? loggedInIcons : loggedOutIcons}
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+  );
 };
 
 export default NavBar;
