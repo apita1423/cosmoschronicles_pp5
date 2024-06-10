@@ -59,7 +59,9 @@ const Event = (props) => {
             </Card.Body>
 
             <Card.Body>
-                <h1>{title}</h1>
+                <Link to={`/events/${id}`}>
+                    <h2>{title}</h2>
+                </Link>
                 <br />
                 <p><strong>Description: </strong> {description}</p>
                 <p><strong>Date: </strong> {date} | <strong>Time: </strong>{time}</p>
