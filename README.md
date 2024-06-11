@@ -2,7 +2,7 @@
 
 - Cosmos Chronicles: A social media app for anything astronomy.
 
-![Cosmos Chronicles Responsive Page]()
+![Cosmos Chronicles Responsive Page](/src/assets/readme-images/amiresponsive.png)
 
 - Cosmos Chronicles is LIVE: [Cosmos Chronicles]()
 
