@@ -4,6 +4,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -16,7 +17,9 @@ code {
     monospace;
 }
 
-.navbar-toggler-icon {
-  background-color: #ff9254;
+.navbar-light .navbar-toggler-icon {
+  background-color: #ff5757;
   border-radius: 5px;
 }
+
+

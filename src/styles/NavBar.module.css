@@ -3,6 +3,11 @@
   background: radial-gradient(circle, rgba(112, 17, 97, 1) 0%, rgba(21, 3, 75, 1) 100%);
 }
 
+.NavBar .NavLink {
+  margin-left: 6px;
+  padding: 6px;
+}
+
 .NavLink {
   min-width: fit-content;
   padding: 5px;
