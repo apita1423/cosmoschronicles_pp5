@@ -8,6 +8,14 @@
   padding: 6px;
 }
 
+.NavBar a  {
+  color: #bebcfc;
+}
+
+.NavBar a:hover {
+  color: #28bbb8;
+}
+
 .NavLink {
   min-width: fit-content;
   padding: 5px;
