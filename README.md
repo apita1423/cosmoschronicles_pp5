@@ -120,8 +120,6 @@ Colours used for text
 <img src="./src/assets/readme-images/pp5-database.png">
 </detail>
     
----
-
 ## 🔭 Features
 
 ### General Features
