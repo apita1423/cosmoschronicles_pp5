@@ -116,9 +116,6 @@ Colours used for text
 
 ### Database Relationship Schema
 
-<details><summary>Database Relationship Scheme</summary>
-<img src="./src/assets/readme-images/pp5-database.png">
-</detail>
     
 ## 🔭 Features
 
