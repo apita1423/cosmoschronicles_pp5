@@ -112,6 +112,8 @@ Colours used for text
 
 ### Wireframes
 
+- For Cosmos Chronicles's wireframes, I used Balsamiq. After going through the CI's Moments Walkthrough, I based Cosmos Chronicles's wireframes on that. I added so
+
 ### Database Relationship Schema
 
 <details><summary>Database Relationship Scheme</summary>
@@ -124,9 +126,191 @@ Colours used for text
 
 ### General Features
 
+<details><summary>Favicon</summary>
+<img src="/src/assets/readme-images/features-images/favicon.png">
+</details>
+
+<details><summary>Favicon Tab</summary>
+<img src="/src/assets/readme-images/features-images/favicon-tab.png">
+</details>
+
+<details><summary>Navbar (Before Login/Register)</summary>
+<img src="/src/assets/readme-images/features-images/prenavbar.png">
+</details>
+
+<details><summary>Home</summary>
+<img src="/src/assets/readme-images/features-images/Home.png">
+</details>
+
+<details><summary>About Us (Top)</summary>
+<img src="/src/assets/readme-images/features-images/aboutus-1.png">
+</details>
+
+<details><summary>About Us (Bottom)</summary>
+<img src="/src/assets/readme-images/features-images/aboutus-2.png">
+</details>
+
+<details><summary>Login</summary>
+<img src="/src/assets/readme-images/features-images/login.png">
+</details>
+
+<details><summary>Register</summary>
+<img src="/src/assets/readme-images/features-images/register.png">
+</details>
+
+<details><summary>Navbar (After Login)</summary>
+<img src="/src/assets/readme-images/features-images/postnavbar.png">
+</details>
+
+<details><summary>Add Item Dropdown (Add Posts, Add News, Add Events)</summary>
+<img src="/src/assets/readme-images/features-images/dropdown.png">
+</details>
+
+<details><summary>Space Members Profiles (Users)</summary>
+<img src="/src/assets/readme-images/features-images/spacemembers.png">
+</details>
+
+<details><summary>Post Search Bar</summary>
+<img src="/src/assets/readme-images/features-images/postsearch.png">
+</details>
+
+<details><summary>Add Post</summary>
+<img src="/src/assets/readme-images/features-images/addpost.png">
+</details>
+
+<details><summary>Posts</summary>
+<img src="/src/assets/readme-images/features-images/post.png">
+</details>
+
+<details><summary>Single Post</summary>
+<img src="/src/assets/readme-images/features-images/singlepost.png">
+</details>
+
+<details><summary>Like/Comment Icons</summary>
+<img src="/src/assets/readme-images/features-images/like_comment.png">
+</details>
+
+<details><summary>Comment</summary>
+<img src="/src/assets/readme-images/features-images/comment.png">
+</details>
+
+<details><summary>Comment - Edit/Delete</summary>
+<img src="/src/assets/readme-images/features-images/comment_edit_delete.png">
+</details>
+
+<details><summary>News Search Bar</summary>
+<img src="/src/assets/readme-images/features-images/news-search.png">
+</details>
+
+<details><summary>Add News</summary>
+<img src="/src/assets/readme-images/features-images/addnews.png">
+</details>
+
+<details><summary>Add News Categories</summary>
+<img src="/src/assets/readme-images/features-images/news_categories.png">
+</details>
+
+<details><summary>News Post</summary>
+<img src="/src/assets/readme-images/features-images/newspost.png">
+</details>
+
+<details><summary>News Single</summary>
+<img src="/src/assets/readme-images/features-images/singlenews.png">
+</details>
+
+<details><summary>News Edit/Delete</summary>
+<img src="/src/assets/readme-images/features-images/news_edit_delete.png">
+</details>
+
+<details><summary>Events Search Bar</summary>
+<img src="/src/assets/readme-images/features-images/events_search.png">
+</details>
+
+<details><summary>Add Event</summary>
+<img src="/src/assets/readme-images/features-images/addevent.png">
+</details>
+
+<details><summary>Event Post</summary>
+<img src="/src/assets/readme-images/features-images/eventpost.png">
+</details>
+
+<details><summary>Event Edit/Delete</summary>
+<img src="/src/assets/readme-images/features-images/event_edit_delete.png">
+</details>
+
+<details><summary>Profile Page</summary>
+<img src="/src/assets/readme-images/features-images/profile.png">
+</details>
+
+<details><summary>Profile Edit</summary>
+<img src="/src/assets/readme-images/features-images/edit_profile.png">
+</details>
+
+<details><summary>Edit Profile Username</summary>
+<img src="/src/assets/readme-images/features-images/edit_username.png">
+</details>
+
+<details><summary>Edit Profile Password</summary>
+<img src="/src/assets/readme-images/features-images/edit_password.png">
+</details>
+
+<details><summary>Feed</summary>
+<img src="/src/assets/readme-images/features-images/feed.png">
+</details>
+
+<details><summary>Liked</summary>
+<img src="/src/assets/readme-images/features-images/liked.png">
+</details>
+
+<details><summary>Profile Tooltip</summary>
+<img src="/src/assets/readme-images/features-images/profile.png">
+</details>
+
+<details><summary>Logout Tooltip</summary>
+<img src="/src/assets/readme-images/features-images/logout.png">
+</details>
+
+<details><summary>Error Register</summary>
+<img src="/src/assets/readme-images/features-images/error_register.png">
+</details>
+
+<details><summary>Error Login</summary>
+<img src="/src/assets/readme-images/features-images/error_signin.png">
+</details>
+
+<details><summary>Error Add Post</summary>
+<img src="/src/assets/readme-images/features-images/errors_post.png">
+</details>
+
+<details><summary>Error Add News</summary>
+<img src="/src/assets/readme-images/features-images/addnews.png">
+</details>
+
+<details><summary>Error Add Events</summary>
+<img src="/src/assets/readme-images/features-images/errors_events.png">
+</details>
+
+<details><summary>Profile No Posts</summary>
+<img src="/src/assets/readme-images/features-images/nopost.png">
+</details>
+
+<details><summary>404 Erros</summary>
+<img src="/src/assets/readme-images/features-images/404.png">
+</details>
+
+<details><summary></summary>
+<img src="">
+</details>
+
+<details><summary></summary>
+<img src="">
+</details>
+
 ### Future Implementations
 
  - Box underneath Popular Profiles to show new updates whenever someone updates news or events. When clicked it will redirect to either the News or Events section.
+
+- When someone posts in the News or Events section it automatically populates in the Home page.
 
 - Add a live feed for NASA TV from YouTube.
 
