@@ -47,7 +47,6 @@ const NavBar = () => {
             </NavLink>
           </Dropdown.Item>
         </Dropdown.Menu>
-
       </DropdownToggle>
     </Dropdown >
   )

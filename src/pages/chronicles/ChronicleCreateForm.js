@@ -152,9 +152,9 @@ function ChronicleCreateForm() {
     return (
         <Form onSubmit={handleSubmit}>
             <Row>
-                <Col className="py-2 p-0 p-md-2" md={7} lg={8}>
+                <Col className="py-2 p-0 p-md-2">
                     <Container className={`${appStyles.Content} ${styles.Container} d-flex flex-column justify-content-center`}>
-                        <h1 className="text-center">Create News</h1>
+                        <h1 className="text-center"><i className="fas fa-satellite"></i>Add News<i className="fas fa-satellite"></i></h1>
                         <br />
                         <Form.Group className="text-center" aria-label="image">
                             {image ? (
@@ -180,10 +180,10 @@ function ChronicleCreateForm() {
                             </Alert>
                         ))}
 
-                        <div className="d-md-none">{textFields}</div>
+                        <div className="d-none d-md-none">{textFields}</div>
                     </Container>
                 </Col>
-                <Col md={5} lg={4} className="d-none d-md-block p-0 p-md-2">
+                <Col md={5} lg={4} className="d-md-block p-0 p-md-2">
                     <Container className={appStyles.Content}>{textFields}</Container>
                 </Col>
             </Row>
