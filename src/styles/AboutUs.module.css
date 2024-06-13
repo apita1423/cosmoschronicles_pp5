@@ -6,12 +6,16 @@
   color: aliceblue;
 }
 
+a {
+  color: #ff5757;
+}
+
 .Paragraph {
   font-size: 20px;
 }
 
 .Bold {
-  color: #ff5757;
+  color: #bc3908;
 }
 
 .SocialMedia {

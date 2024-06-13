@@ -1,30 +1,33 @@
-# Cosmos Chronicles
+# 🛰️ Cosmos Chronicles 🛰️
 
-- Cosmos Chronicles: A social media app for anything astronomy.
+Cosmos Chronicles: A social media app for anything astronomy.
 
 ![Cosmos Chronicles Responsive Page](/src/assets/readme-images/amiresponsive.png)
 
-- Cosmos Chronicles is LIVE: [Cosmos Chronicles]()
+Cosmos Chronicles is <span style="color:red"><strong>LIVE</strong></span>: [Cosmos Chronicles]()
 
-* Deployed Frontend:
+* 🪐 Deployed Frontend:
 
-* Deployed Backend:
+* 🪐 Deployed Backend: [Cosmos Chronicles - API](https://cc-drf-api-pp5-b19f7ab60297.herokuapp.com/)
 
-* Frontend Repository:
+* 🪐 Frontend Repository: [Cosmos Chronicles (FE) - Repository](https://github.com/apita1423/cosmoschronicles_pp5)
 
-* Backend Repository:
+* 🪐 Backend Repository: [Cosmos Chronicles API - Repository](https://github.com/apita1423/cc-drf-api-pp5)
 
 
-## Table of Contents
+## 🔭 Table of Contents
 
 - [Introduction](#introduction)
 
 - [User Experience](#user-experience)
 
     - [Project Goals](#project-goals)
-    - [User Demographics](#users-demographics)
-    - [Audience](#audience)
-    - [User Stories](#user-stories)
+    - [Target Audience](#target-audience)
+
+- [User Stories](#user-stories)
+    - [First Time Visitor Goals](#first-time-visitor-goals)
+    - [Registered User Goals](#registered-user-goals)
+    - [Agile Development](#agile-development)
 
 - [Design](#design)
 
@@ -37,25 +40,28 @@
 - [Features](#features)
 
     - [General Features](#general-features)
+    - [Future Implementations](#future-implementations)
     - [Accessibility](#accessibility)
-
-- [Testing](#testing)
-
-    - [Validator Testing](#validator-testing)
-    - [Manual Testing](#manual-testing)
-    - [User Stories Testing](#user-stories-testing)
-    - [Fixed Bugs and Solutions](#fixed-bugs-and-solutions)
-    - [Unfixed Bugs](#unfixed-bugs)
-
-- [Deployment](#deployment)
-    - [Github](#github)
-    - [Heroku](#Heroku)
 
 - [Technologies Used](#technologies-used)
 
     - [Languages Used](#languages-used)
     - [Framework, Libraries, and Programs Used](#framework-libraries-and-programs-used)
     - [Database Platform Used](#database-platform-used)
+
+- [Testing](#testing)
+
+    - [Validator Testing](#validator-testing)
+    - [Manual Testing](#manual-testing)
+    - [User Stories Testing](#user-stories-testing)
+    - [Unfixed Bugs](#unfixed-bugs)
+
+- [Components](#components)
+
+- [Deployment](#deployment)
+    - [Github](#github)
+    - [Heroku](#Heroku)
+    - [Fork Repository](#fork-repository)
 
 - [Credits](#credits)
 
@@ -64,65 +70,73 @@
     - [Media](#media)
     - [Acknowledgements](#acknowledgements)
 
----
 
-## Introduction
+## 🔭 Introduction
 
-Cosmos Chronicles is my fifth project with Code Institute. The idea for Cosmos Chronicles has been around since I started with my first project. I have been wanting to do a project based on one of my other passions Astronomy. Cosmos Chronicles is based off CI's Moments Walkthrough, which allowed my idea of creating a place for space enthusiants to come together and post about everything astronomy.
+Cosmos Chronicles is my fifth project with Code Institute. The idea for Cosmos Chronicles has been around since I started with my first project. I have been wanting to do a project based on one of my other passions Astronomy. Cosmos Chronicles is based off CI's Moments Walkthrough, which allowed my idea of creating a place for space enthusiants to come together and post about anything astronomy.
 
----
-
-## User Experience
+## 🔭 User Experience
 
 ### Project Goals
 
-### User Demographics
-
-Cosmos Chronicles was designed for anything space enthusiants. Who can use this site? Anyone from astrobiologists to librarians who passions are a bit more then books. 
+Cosmos Chronicles was designed for space enthusiants. Cosmos Chronicles is for anyone whose passion is, as they say in Star Trek, "The Final Frontier"! A place where user can posts about what they saw through their telescope or what their students did for space-themed day. A place for news about launches, update on various missions, or what is happening across space agencies can be posted. Also, a place where events can be posted and people would know where they can meet to experience space events. 
 
 ### Audience
 
-Cosmos Chronicles is for anyone whose passion is, as they say in Star Trek, "The Final Frontier"!
+Who can use this site? Anyone from astrobiologists who might do this on a daily bases to librarians whose passions are a bit more then books. 
 
-### User Stories
+## 🔭 User Stories
 
----
 
-## Design
+## 🔭 Design
 
 ### Colour Scheme
 
- I wanted the colours of the site to be space related. I wanted to also try out gradient as a background colour, which allowed it to look a bit like a galaxy. My favourite colour is orange, so I wanted to add that as well. I was having a bit of trouble with the gradient due to having certain colours different depending on where they were on the page. 
+I wanted Cosmos Chronicles to have colours that will be space themed. I wanted to try gradient as a background, but there was some difficulties. These difficulties became apparent more in the navbar. Because of the gradient there was a dark and light colour and the colour of the text in the navbar had to show through those colours. Even though the difficulties were there I was able to work around and still use the gradient for the project. 
 
- ![Gradient Colours](/src/assets/readme-images/gradient-colour.png)
+Gradient colour used for the background
+![Gradient Colours](/src/assets/readme-images/gradient-colour.png)
 
- ![Colours Used](/src/assets/readme-images/colours.png)
+Colours used for text
+![Colours Used](/src/assets/readme-images/colours.png)
 
 ### Typography
 
-- Chakra Petch from [Google Font](https://fonts.google.com/specimen/Chakra+Petch?query=chakra+) was used for Cosmos Chronicles.
+- [Reddit Mono](https://fonts.google.com/specimen/Reddit+Mono?query=reddit+mono) from Google Fonts was used for Cosmos Chronicles.
 
 ### Imagery
 
-- Images have been obtained from Pexel and NASA Photojournal.
+- Images have been obtained from Pexel and NASA Photojournal. One photo came from a co-workers testing the site (photo of the chocolate cake).
 
 - All images will be credited in the [Media](#media) section.
 
 ### Wireframes
 
 ### Database Relationship Schema
+
+<details><summary>Database Relationship Scheme</summary>
+<img src="./src/assets/readme-images/pp5-database.png">
+</detail>
     
 ---
 
-## Features
+## 🔭 Features
 
 ### General Features
+
+### Future Implementations
+
+ - Box underneath Popular Profiles to show new updates whenever someone updates news or events. When clicked it will redirect to either the News or Events section.
+
+- Add a live feed for NASA TV from YouTube.
+
+- Create a section where the community can take part in astronomy themed citizen science.
 
 ### Accessibility
 
 ---
 
-## Testing
+## 🔭 Testing
 
 ### Validator Testing
 
@@ -130,19 +144,17 @@ Cosmos Chronicles is for anyone whose passion is, as they say in Star Trek, "The
 
 ### User Stories Testing
 
-### Fixed Bugs and Solution
-
 ### Unfixed Bugs
 
 ---
 
-## Deployment
+## 🔭 Deployment
 
 - Cosmos Chronicles (Frontend) has been deployed through Heroku.
     - [Cosmos Chronicles]()
 
 - Cosmos Chronicles API (Backend) has been deployed through Heroku.
-    - [Cosmos Chronicles API]()
+    - [Cosmos Chronicles API](https://cc-drf-api-pp5-b19f7ab60297.herokuapp.com/)
 
 ### Github
 
@@ -150,29 +162,27 @@ Cosmos Chronicles is for anyone whose passion is, as they say in Star Trek, "The
 
 ---
 
-## Technologies Used
+## 🔭 Technologies Used
 
 ### Languages Used
 
 - HTML
 - CSS
 - Javascript
-- Python
 
 ### Frameworks Used
 
-- Django
-- React
+- ReactJS
 - Cloudinary
-- Bootstrap 
+- React-Bootstrap 
 
 ### Database Platform Used
 
- - CI's Postgre SQL 
+ - CI's Postgres SQL 
 
 ### Tools Used
 
-- VSCode - IDE used to create both Cosmos Chronicles frontend and backend.
+- VSCode - IDE used to create both Cosmos Chronicles' frontend and backend.
 - Github - To store the Cosmos Chronicles Repo.
 - Font Awesome - Icons used throughout the project.
 - Balsamiq - Used to create the wireframes.
@@ -181,14 +191,16 @@ Cosmos Chronicles is for anyone whose passion is, as they say in Star Trek, "The
 - Coolors - Used to pick colours.
 - CSS Gradient - Used to great the colours gradient for the background. [CSS Gradient](https://cssgradient.io/)
 - Canva - Used for the design of the logo, notfound page image, and astronomical clock image.
-- ChaptGPT - Used for About Us page content.
+- ChatGPT - Used for About Us, News, and Events content.
+- AmIResponsive - Used for the responsive image.
+- ResponsiveTestTool - Used to the site in various sizes. [ResponsiveTestTool](https://responsivetesttool.com/)
 
 ---
-## Components
+## 🔭 Components
 
 ---
 
-## Credits
+## 🔭 Credits
 
 ### Code Used
 
@@ -196,7 +208,7 @@ Cosmos Chronicles is for anyone whose passion is, as they say in Star Trek, "The
 
 ### Content
 
-- Content in bios and posts were done by me. ChatGPT was used for the content in the about us, events, and news summary.
+- Content in bios and posts were done by me. ChatGPT was used for the content in the about us, events, and news pages.
 
 ### Media
 
