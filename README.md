@@ -4,7 +4,7 @@ Cosmos Chronicles: A social media app for anything astronomy.
 
 ![Cosmos Chronicles Responsive Page](/src/assets/readme-images/amiresponsive.png)
 
-Cosmos Chronicles is <span style="color:red"><strong>LIVE</strong></span>: [Cosmos Chronicles]()
+Cosmos Chronicles is LIVE: [Cosmos Chronicles]()
 
 * 🪐 Deployed Frontend:
 
