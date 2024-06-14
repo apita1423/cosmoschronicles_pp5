@@ -152,23 +152,23 @@ function ChronicleCreateForm() {
     return (
         <Form onSubmit={handleSubmit}>
             <Row>
-                <Col className="py-2 p-0 p-md-2">
-                    <Container className={`${appStyles.Content} ${styles.Container} d-flex flex-column justify-content-center`}>
+                <Col className="py-5 p-0 p-md-2">
+                    <Container fluid className={`${appStyles.Content} ${styles.Container} flex-column justify-content-center align-items-center`}>
                         <h1 className="text-center"><i className="fas fa-satellite"></i>Add News<i className="fas fa-satellite"></i></h1>
                         <br />
-                        <Form.Group className="text-center" aria-label="image">
+                        <Form.Group aria-label="image">
                             {image ? (
                                 <>
                                     <figure>
-                                        <Image className={appStyles.Image} src={image} rounded />
+                                        <Image fluid className={appStyles.Image} src={image} rounded />
                                     </figure>
                                     <div>
                                         <Form.Label className={`${btnStyles.Button} ${btnStyles.Purple} btn`} htmlFor="image-upload">Change the Image</Form.Label>
                                     </div>
                                 </>
                             ) : (
-                                <Form.Label className="d-flex justify-content-center" htmlFor="image-upload">
-                                    <Asset src={Upload} message="Click on the astronaut to upload image" />
+                                <Form.Label htmlFor="image-upload">
+                                    <Asset src={Upload} message="Click to upload image" />
                                 </Form.Label>
                             )}
 

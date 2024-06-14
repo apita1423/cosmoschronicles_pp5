@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar, Container, Nav, OverlayTrigger, Tooltip, Dropdown } from "react-bootstrap";
+import { Navbar, Container, Nav, OverlayTrigger, Tooltip, } from "react-bootstrap";
 import logo from "../assets/cc-logo.png";
 import styles from "../styles/NavBar.module.css";
 import { NavLink } from "react-router-dom";
@@ -8,7 +8,6 @@ import Avatar from "./Avatar";
 import axios from "axios";
 import useClickOutsideToggle from "../hooks/useClickOutsideToggle";
 import { removeTokenTimestamp } from "../utils/utils";
-import DropdownToggle from "react-bootstrap/esm/DropdownToggle";
 
 const NavBar = () => {
   const currentUser = useCurrentUser();
@@ -27,31 +26,20 @@ const NavBar = () => {
   };
 
   const addPostIcon = (
-    <Dropdown className={styles.NavLink}>
-      <DropdownToggle className={styles.DropdownToggle}>Add Items
-
-        <Dropdown.Menu className={styles.DropdownColours}>
-          <Dropdown.Item>
-            <NavLink className={styles.NavLink} activeClassName={styles.Active} to="/posts/create">
-              <i className="far fa-plus-square"></i>Add Post
-            </NavLink>
-          </Dropdown.Item>
-          <Dropdown.Item>
-            <NavLink className={styles.NavLink} activeClassName={styles.Active} to="/news/create">
-              <i className="fas fa-folder-plus"></i>Add News
-            </NavLink>
-          </Dropdown.Item>
-          <Dropdown.Item>
-            <NavLink className={styles.NavLink} activeClassName={styles.Active} to="/events/create">
-              <i className="fas fa-calendar-plus"></i>Add Event
-            </NavLink>
-          </Dropdown.Item>
-        </Dropdown.Menu>
-      </DropdownToggle>
-    </Dropdown >
+    <OverlayTrigger placement="bottom-start" overlay={<Tooltip>Add Post</Tooltip>}>
+      <NavLink className={styles.NavLink} activeClassName={styles.Active} to="/posts/create">
+        <i className="far fa-plus-square"></i>
+      </NavLink>
+    </OverlayTrigger >
   )
 
   const loggedInIcons = <>
+    <NavLink className={styles.NavLink} activeClassName={styles.Active} to="/news/create">
+      <i className="fas fa-folder-plus"></i>Add News
+    </NavLink>
+    <NavLink className={styles.NavLink} activeClassName={styles.Active} to="/events/create">
+      <i className="fas fa-calendar-plus"></i>Add Event
+    </NavLink>
     <NavLink className={styles.NavLink} activeClassName={styles.Active} to="/news">
       <i className="far fa-newspaper"></i>News
     </NavLink>
@@ -65,17 +53,18 @@ const NavBar = () => {
       <i className="fas fa-heart"></i>Liked
     </NavLink>
     <OverlayTrigger placement="bottom-start" overlay={<Tooltip>Profile</Tooltip>}>
-    <NavLink className={styles.NavLink} to={`/profiles/${currentUser?.profile_id}`}>
-      <Avatar src={currentUser?.profile_image} height={40} />
-    </NavLink>
-  </OverlayTrigger>
+      <NavLink className={styles.NavLink} to={`/profiles/${currentUser?.profile_id}`}>
+        <Avatar src={currentUser?.profile_image} height={40} />
+      </NavLink>
+    </OverlayTrigger>
     <OverlayTrigger placement="bottom-start" overlay={<Tooltip>Log Out</Tooltip>}>
       <NavLink className={styles.NavLink} to="/" onClick={handleLogOut}>
         <i className="fas fa-sign-out-alt"></i>
       </NavLink>
     </OverlayTrigger>
-  </>
 
+
+  </>
 
   const loggedOutIcons = (
     <>
@@ -96,21 +85,22 @@ const NavBar = () => {
       <Container>
         <NavLink to="/">
           <Navbar.Brand>
-            <img src={logo} alt="logo" height="70" />
+            <img src={logo} alt="logo" height="48" />
           </Navbar.Brand>
         </NavLink>
+
         {currentUser && addPostIcon}
         <Navbar.Toggle ref={ref} onClick={() => setExpanded(!expanded)} aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto text-left">
             <NavLink exact className={styles.NavLink} activeClassName={styles.Active} to="/">
-              <i className="fas fa-home"></i> Home
+              <i className="fas fa-home"></i>Home
             </NavLink>
             {currentUser ? loggedInIcons : loggedOutIcons}
           </Nav>
         </Navbar.Collapse>
       </Container>
-    </Navbar>
+    </Navbar >
   );
 };
 

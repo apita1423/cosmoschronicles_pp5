@@ -64,13 +64,13 @@ function ProfilePage() {
                             <div>{profile?.posts_count}</div>
                             <div>Posts</div>
                         </Col>
-                        <Col xs={3} className="my-2">
+                        <Col xs={5} className="my-2">
                             <div>{profile?.followers_count}</div>
-                            <div>Followers</div>
+                            <div>Followers   </div>
                         </Col>
                         <Col xs={3} className="my-2">
                             <div>{profile?.following_count}</div>
-                            <div>   Following</div>
+                            <div>    Following</div>
                         </Col>
                     </Row>
                 </Col>

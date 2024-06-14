@@ -4,8 +4,8 @@
 }
 
 .NavBar .NavLink {
-  margin-left: 6px;
-  padding: 6px;
+  margin-left: 4px;
+  padding: 3px;
 }
 
 .NavBar a  {
@@ -14,11 +14,6 @@
 
 .NavBar a:hover {
   color: #28bbb8;
-}
-
-.NavLink {
-  min-width: fit-content;
-  padding: 5px;
 }
 
 .DropdownColours {
