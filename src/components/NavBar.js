@@ -34,12 +34,6 @@ const NavBar = () => {
   )
 
   const loggedInIcons = <>
-    <NavLink className={styles.NavLink} activeClassName={styles.Active} to="/news/create">
-      <i className="fas fa-folder-plus"></i>Add News
-    </NavLink>
-    <NavLink className={styles.NavLink} activeClassName={styles.Active} to="/events/create">
-      <i className="fas fa-calendar-plus"></i>Add Event
-    </NavLink>
     <NavLink className={styles.NavLink} activeClassName={styles.Active} to="/news">
       <i className="far fa-newspaper"></i>News
     </NavLink>
@@ -52,6 +46,17 @@ const NavBar = () => {
     <NavLink className={styles.NavLink} activeClassName={styles.Active} to="/liked">
       <i className="fas fa-heart"></i>Liked
     </NavLink>
+
+    <OverlayTrigger placement="bottom-start" overlay={<Tooltip>Add News</Tooltip>}>
+      <NavLink className={styles.NavLink} activeClassName={styles.Active} to="/news/create">
+        <i className="fas fa-folder-plus"></i>
+      </NavLink>
+    </OverlayTrigger>
+    <OverlayTrigger placement="bottom-start" overlay={<Tooltip>Add Event</Tooltip>}>
+      <NavLink className={styles.NavLink} activeClassName={styles.Active} to="/events/create">
+        <i className="fas fa-calendar-plus"></i>
+      </NavLink>
+    </OverlayTrigger>
     <OverlayTrigger placement="bottom-start" overlay={<Tooltip>Profile</Tooltip>}>
       <NavLink className={styles.NavLink} to={`/profiles/${currentUser?.profile_id}`}>
         <Avatar src={currentUser?.profile_image} height={40} />
