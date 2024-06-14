@@ -115,7 +115,7 @@ function PostCreateForm() {
                                 </>
                             ) : (
                                 <Form.Label className="d-flex justify-content-center" htmlFor="image-upload">
-                                    <Asset src={Upload} message="Click on astronaut to upload an image" />
+                                    <Asset src={Upload} message="Click to upload an image" />
                                 </Form.Label>
                             )}
                             <Form.File id="image-upload" accept="image/*" onChange={handleChangeImage} ref={imageInput} />

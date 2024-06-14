@@ -62,7 +62,7 @@ function EventCreateForm() {
 
     return (
         <Container className={`${appStyles.Content} ${styles.Container}`}>
-            <h1 className="text-center"><i className="fas fa-satellite"></i>Add Event<i className="fas fa-satellite"></i></h1>
+            <h2 className="text-center"><i className="fas fa-satellite"></i>Add Event<i className="fas fa-satellite"></i></h2>
             <br />
             <Form onSubmit={handleSubmit}>
                 <Form.Group>

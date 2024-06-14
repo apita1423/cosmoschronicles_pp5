@@ -153,7 +153,7 @@ function ChronicleCreateForm() {
         <Form onSubmit={handleSubmit}>
             <Row>
                 <Col className="py-5 p-0 p-md-2">
-                    <Container fluid className={`${appStyles.Content} ${styles.Container} flex-column justify-content-center align-items-center`}>
+                    <Container fluid className={`${appStyles.Content} ${styles.Container} flex-column justify-content-center`}>
                         <h1 className="text-center"><i className="fas fa-satellite"></i>Add News<i className="fas fa-satellite"></i></h1>
                         <br />
                         <Form.Group aria-label="image">
