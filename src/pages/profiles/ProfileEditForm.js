@@ -1,10 +1,20 @@
+
 import React, { useState, useEffect, useRef } from "react";
 import { useHistory, useParams } from "react-router-dom";
 
-import { Form, Button, Image, Row, Col, Container, Alert } from "react-bootstrap";
+import Form from "react-bootstrap/Form";
+import Button from "react-bootstrap/Button";
+import Image from "react-bootstrap/Image";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import Container from "react-bootstrap/Container";
+import Alert from "react-bootstrap/Alert";
 
 import { axiosReq } from "../../api/axiosDefault";
-import { useCurrentUser, useSetCurrentUser } from "../../contexts/CurrentUserContext";
+import {
+    useCurrentUser,
+    useSetCurrentUser,
+} from "../../contexts/CurrentUserContext";
 
 import btnStyles from "../../styles/Button.module.css";
 import appStyles from "../../App.module.css";
@@ -33,7 +43,7 @@ const ProfileEditForm = () => {
                     const { name, content, image } = data;
                     setProfileData({ name, content, image });
                 } catch (err) {
-                    // console.log(err);
+                    console.log(err);
                     history.push("/");
                 }
             } else {
@@ -69,7 +79,7 @@ const ProfileEditForm = () => {
             }));
             history.goBack();
         } catch (err) {
-            // console.log(err);
+            console.log(err);
             setErrors(err.response?.data);
         }
     };
@@ -78,7 +88,13 @@ const ProfileEditForm = () => {
         <>
             <Form.Group>
                 <Form.Label>Bio</Form.Label>
-                <Form.Control as="textarea" value={content} onChange={handleChange} name="content" rows={7} />
+                <Form.Control
+                    as="textarea"
+                    value={content}
+                    onChange={handleChange}
+                    name="content"
+                    rows={7}
+                />
             </Form.Group>
 
             {errors?.content?.map((message, idx) => (
@@ -86,11 +102,14 @@ const ProfileEditForm = () => {
                     {message}
                 </Alert>
             ))}
-            <Button className={`${btnStyles.Button} ${btnStyles.Purple}`} onClick={() => history.goBack()}>
-                Cancel
+            <Button
+                className={`${btnStyles.Button} ${btnStyles.Blue}`}
+                onClick={() => history.goBack()}
+            >
+                cancel
             </Button>
-            <Button className={`${btnStyles.Button} ${btnStyles.Purple}`} type="submit">
-                Save
+            <Button className={`${btnStyles.Button} ${btnStyles.Blue}`} type="submit">
+                save
             </Button>
         </>
     );
@@ -112,7 +131,10 @@ const ProfileEditForm = () => {
                                 </Alert>
                             ))}
                             <div>
-                                <Form.Label className={`${btnStyles.Button} ${btnStyles.Purple} btn my-auto`} htmlFor="image-upload">
+                                <Form.Label
+                                    className={`${btnStyles.Button} ${btnStyles.Blue} btn my-auto`}
+                                    htmlFor="image-upload"
+                                >
                                     Change the image
                                 </Form.Label>
                             </div>

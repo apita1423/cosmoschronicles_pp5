@@ -17,7 +17,9 @@ const Profile = (props) => {
     const { handleFollow, handleUnfollow } = useSetProfileData();
 
     return (
-        <div className={`my-3 d-flex align-items-center ${mobile && "flex-column"}`}>
+        <div
+            className={`my-3 d-flex align-items-center ${mobile && "flex-column"}`}
+        >
             <div>
                 <Link className="align-self-center" to={`/profiles/${id}`}>
                     <Avatar src={image} height={imageSize} />
@@ -31,12 +33,18 @@ const Profile = (props) => {
                     currentUser &&
                     !is_owner &&
                     (following_id ? (
-                        <Button className={`${btnStyles.Button} ${btnStyles.BlackOutline}`} onClick={() => handleUnfollow(profile)}>
-                            Unfollow
+                        <Button
+                            className={`${btnStyles.Button} ${btnStyles.BlackOutline}`}
+                            onClick={() => handleUnfollow(profile)}
+                        >
+                            unfollow
                         </Button>
                     ) : (
-                        <Button className={`${btnStyles.Button} ${btnStyles.Black}`} onClick={() => handleFollow(profile)}>
-                            Follow
+                        <Button
+                            className={`${btnStyles.Button} ${btnStyles.Black}`}
+                            onClick={() => handleFollow(profile)}
+                        >
+                            follow
                         </Button>
                     ))}
             </div>

@@ -7,7 +7,7 @@ export const handlers = [
         return res(
             ctx.json({
                 pk: 2,
-                username: "amanda-admin",
+                username: "amanda1423",
                 email: "",
                 first_name: "",
                 last_name: "",

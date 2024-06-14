@@ -1,28 +1,42 @@
 import React, { useEffect, useState } from "react";
 
-import { Alert, Button, Col, Container, Form, Row } from "react-bootstrap";
+import Alert from "react-bootstrap/Alert";
+import Button from "react-bootstrap/Button";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import Form from "react-bootstrap/Form";
 
 import { useHistory, useParams } from "react-router-dom";
 import { axiosRes } from "../../api/axiosDefault";
-import { useCurrentUser, useSetCurrentUser } from "../../contexts/CurrentUserContext";
+import { useCurrentUser } from "../../contexts/CurrentUserContext";
 
 import btnStyles from "../../styles/Button.module.css";
 import appStyles from "../../App.module.css";
 
-const UsernameForm = () => {
-    const [username, setUsername] = useState("");
-    const [errors, setErrors] = useState({});
-
+const UserPasswordForm = () => {
     const history = useHistory();
     const { id } = useParams();
-
     const currentUser = useCurrentUser();
-    const setCurrentUser = useSetCurrentUser();
+
+    const [userData, setUserData] = useState({
+        new_password1: "",
+        new_password2: "",
+    });
+    const { new_password1, new_password2 } = userData;
+
+    const [errors, setErrors] = useState({});
+
+    const handleChange = (event) => {
+        setUserData({
+            ...userData,
+            [event.target.name]: event.target.value,
+        });
+    };
 
     useEffect(() => {
-        if (currentUser?.profile_id?.toString() === id) {
-            setUsername(currentUser.username);
-        } else {
+        if (currentUser?.profile_id?.toString() !== id) {
+            // redirect user if they are not the owner of this profile
             history.push("/");
         }
     }, [currentUser, history, id]);
@@ -30,16 +44,10 @@ const UsernameForm = () => {
     const handleSubmit = async (event) => {
         event.preventDefault();
         try {
-            await axiosRes.put("/dj-rest-auth/user/", {
-                username,
-            });
-            setCurrentUser((prevUser) => ({
-                ...prevUser,
-                username,
-            }));
+            await axiosRes.post("/dj-rest-auth/password/change/", userData);
             history.goBack();
         } catch (err) {
-            // console.log(err);
+            console.log(err);
             setErrors(err.response?.data);
         }
     };
@@ -48,21 +56,48 @@ const UsernameForm = () => {
         <Row>
             <Col className="py-2 mx-auto text-center" md={6}>
                 <Container className={appStyles.Content}>
-                    <Form onSubmit={handleSubmit} className="my-2">
+                    <Form onSubmit={handleSubmit}>
                         <Form.Group>
-                            <Form.Label>Change Username</Form.Label>
-                            <Form.Control placeholder="username" type="text" value={username} onChange={(event) => setUsername(event.target.value)} />
+                            <Form.Label>New password</Form.Label>
+                            <Form.Control
+                                placeholder="new password"
+                                type="password"
+                                value={new_password1}
+                                onChange={handleChange}
+                                name="new_password1"
+                            />
                         </Form.Group>
-                        {errors?.username?.map((message, idx) => (
+                        {errors?.new_password1?.map((message, idx) => (
                             <Alert key={idx} variant="warning">
                                 {message}
                             </Alert>
                         ))}
-                        <Button className={`${btnStyles.Button} ${btnStyles.Purple}`} onClick={() => history.goBack()}>
-                            Cancel
+                        <Form.Group>
+                            <Form.Label>Confirm password</Form.Label>
+                            <Form.Control
+                                placeholder="confirm new password"
+                                type="password"
+                                value={new_password2}
+                                onChange={handleChange}
+                                name="new_password2"
+                            />
+                        </Form.Group>
+                        {errors?.new_password2?.map((message, idx) => (
+                            <Alert key={idx} variant="warning">
+                                {message}
+                            </Alert>
+                        ))}
+                        <Button
+                            className={`${btnStyles.Button} ${btnStyles.Blue}`}
+                            onClick={() => history.goBack()}
+                        >
+                            cancel
                         </Button>
-                        <Button className={`${btnStyles.Button} ${btnStyles.Purple}`} type="submit">
-                            Save
+                        <Button
+                            type="submit"
+                            className={`${btnStyles.Button} ${btnStyles.Blue}`}
+                        >
+                            save
                         </Button>
                     </Form>
                 </Container>
@@ -71,4 +106,4 @@ const UsernameForm = () => {
     );
 };
 
-export default UsernameForm;
+export default UserPasswordForm;
