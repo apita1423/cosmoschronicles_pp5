@@ -289,7 +289,7 @@ Colours used for text
 <img src="/src/assets/readme-images/features-images/nopost.png">
 </details>
 
-<details><summary>404 Erros</summary>
+<details><summary>404 Errors</summary>
 <img src="/src/assets/readme-images/features-images/404.png">
 </details>
 
@@ -303,7 +303,7 @@ Colours used for text
 
 ### Future Implementations
 
- - Box underneath Popular Profiles to show new updates whenever someone updates news or events. When clicked it will redirect to either the News or Events section.
+- Box underneath Popular Profiles to show new updates whenever someone updates news or events. When clicked it will redirect to either the News or Events section.
 
 - When someone posts in the News or Events section it automatically populates in the Home page.
 
