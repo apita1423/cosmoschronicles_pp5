@@ -37,7 +37,7 @@ function PostEditForm() {
 
                 is_owner ? setPostData({ title, content, image }) : history.push("/");
             } catch (err) {
-                console.log(err);
+                // console.log(err);
             }
         };
 
@@ -76,7 +76,7 @@ function PostEditForm() {
             await axiosReq.put(`/posts/${id}/`, formData);
             history.push(`/posts/${id}`);
         } catch (err) {
-            console.log(err);
+            // console.log(err);
             if (err.response?.status !== 401) {
                 setErrors(err.response?.data);
             }
@@ -117,13 +117,13 @@ function PostEditForm() {
             ))}
 
             <Button
-                className={`${btnStyles.Button} ${btnStyles.Blue}`}
+                className={`${btnStyles.Button} ${btnStyles.Purple}`}
                 onClick={() => history.goBack()}
             >
-                cancel
+                Cancel
             </Button>
-            <Button className={`${btnStyles.Button} ${btnStyles.Blue}`} type="submit">
-                save
+            <Button className={`${btnStyles.Button} ${btnStyles.Purple}`} type="submit">
+                Save
             </Button>
         </div>
     );
@@ -141,7 +141,7 @@ function PostEditForm() {
                             </figure>
                             <div>
                                 <Form.Label
-                                    className={`${btnStyles.Button} ${btnStyles.Blue} btn`}
+                                    className={`${btnStyles.Button} ${btnStyles.Purple} btn`}
                                     htmlFor="image-upload"
                                 >
                                     Change the image

@@ -64,7 +64,7 @@ function PostCreateForm() {
             const { data } = await axiosReq.post("/posts/", formData);
             history.push(`/posts/${data.id}`);
         } catch (err) {
-            console.log(err);
+            // console.log(err);
             if (err.response?.status !== 401) {
                 setErrors(err.response?.data);
             }
@@ -105,13 +105,13 @@ function PostCreateForm() {
             ))}
 
             <Button
-                className={`${btnStyles.Button} ${btnStyles.Blue}`}
+                className={`${btnStyles.Button} ${btnStyles.Purple}`}
                 onClick={() => history.goBack()}
             >
-                cancel
+                Cancel
             </Button>
-            <Button className={`${btnStyles.Button} ${btnStyles.Blue}`} type="submit">
-                create
+            <Button className={`${btnStyles.Button} ${btnStyles.Purple}`} type="submit">
+                Create
             </Button>
         </div>
     );
@@ -131,7 +131,7 @@ function PostCreateForm() {
                                     </figure>
                                     <div>
                                         <Form.Label
-                                            className={`${btnStyles.Button} ${btnStyles.Blue} btn`}
+                                            className={`${btnStyles.Button} ${btnStyles.Purple} btn`}
                                             htmlFor="image-upload"
                                         >
                                             Change the image
@@ -145,7 +145,7 @@ function PostCreateForm() {
                                 >
                                     <Asset
                                         src={Upload}
-                                        message="Click or tap to upload an image"
+                                        message="Click to upload an image"
                                     />
                                 </Form.Label>
                             )}
