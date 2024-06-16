@@ -121,8 +121,9 @@ function PostCreateForm() {
             <Row>
                 <Col className="py-2 p-0 p-md-2" md={7} lg={8}>
                     <Container
-                        className={`${appStyles.Content} ${styles.Container} d-flex flex-column justify-content-center`}
-                    >
+                        className={`${appStyles.Content} ${styles.Container} d-flex flex-column justify-content-center`}>
+                        <h2 className="text-center"><i className="fas fa-satellite"></i>Add Post<i className="fas fa-satellite"></i></h2>
+                        <br />
                         <Form.Group className="text-center">
                             {image ? (
                                 <>

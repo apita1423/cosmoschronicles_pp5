@@ -4,8 +4,6 @@ Cosmos Chronicles: A social media app for anything astronomy.
 
 ![Cosmos Chronicles Responsive Page](/src/assets/readme-images/amiresponsive.png)
 
-Cosmos Chronicles is LIVE: [Cosmos Chronicles](https://cosmoschronicles-pp5-25951ae1934d.herokuapp.com/)
-
 * 🪐 Deployed Frontend: [Cosmos Chronicles - Deployed FE](https://cosmoschronicles-pp5-25951ae1934d.herokuapp.com/)
 
 * 🪐 Deployed Backend: [Cosmos Chronicles - Deployed API](https://cc-drf-api-pp5-b19f7ab60297.herokuapp.com/)
@@ -106,13 +104,79 @@ Colours used for text
 
 ### Imagery
 
-- Images have been obtained from Pexel and NASA Photojournal. One photo came from a co-workers testing the site (photo of the chocolate cake).
+- Images have been obtained from Pexel, NASA Photojournal, Canva, and News photos came from Sky and Telescope news section (each image has a image copyright input). One photo came from a co-workers testing the site (photo of the chocolate cake).
 
 - All images will be credited in the [Media](#media) section.
 
 ### Wireframes
 
-- For Cosmos Chronicles's wireframes, I used Balsamiq. After going through the CI's Moments Walkthrough, I based Cosmos Chronicles's wireframes on that. I added so
+- For Cosmos Chronicles's wireframes, I used Balsamiq. After going through the CI's Moments Walkthrough, I based Cosmos Chronicles's wireframes on that. There was a few ideas that did not make it to the finish site.
+    - Dropdown for the Add Post, Add News, Add Events
+    - News updates underneath Space Mission Members.
+
+<details><summary>Home (Before Login)</summary>
+<img src="/src/assets/readme-images/wireframes-images/home_prelogin_wf.png">
+</details>
+
+<details><summary>About Us</summary>
+<img src="/src/assets/readme-images/wireframes-images/aboutus_wf.png">
+</details>
+
+<details><summary>Login Page</summary>
+<img src="/src/assets/readme-images/wireframes-images/login_wf.png">
+</details>
+
+<details><summary>Register Page</summary>
+<img src="/src/assets/readme-images/wireframes-images/register_wf.png">
+</details>
+
+<details><summary>Home (After Login)</summary>
+<img src="/src/assets/readme-images/wireframes-images/home_postlogin_wf.png">
+</details>
+
+<details><summary>Single Post</summary>
+<img src="/src/assets/readme-images/wireframes-images/single_post_wf.png">
+</details>
+
+<details><summary>Add post</summary>
+<img src="/src/assets/readme-images/wireframes-images/addpost_wf.png">
+</details>
+
+<details><summary>News</summary>
+<img src="/src/assets/readme-images/wireframes-images/news_wf.png">
+</details>
+
+<details><summary>Single News Post</summary>
+<img src="/src/assets/readme-images/wireframes-images/singelnews_wf.png">
+</details>
+
+<details><summary>Add News</summary>
+<img src="/src/assets/readme-images/wireframes-images/addnews_wf.png">
+</details>
+
+<details><summary>Events</summary>
+<img src="/src/assets/readme-images/wireframes-images/events_wf.png">
+</details>
+
+<details><summary>Singel Event</summary>
+<img src="/src/assets/readme-images/wireframes-images/singleevent_wf.png">
+</details>
+
+<details><summary>Add Event</summary>
+<img src="/src/assets/readme-images/wireframes-images/addevent_wf.png">
+</details>
+
+<details><summary>Feed</summary>
+<img src="/src/assets/readme-images/wireframes-images/feed_wf.png">
+</details>
+
+<details><summary>Liked</summary>
+<img src="/src/assets/readme-images/wireframes-images/liked_wf.png">
+</details>
+
+<details><summary>Profile Page</summary>
+<img src="/src/assets/readme-images/wireframes-images/profile_wf.png">
+</details>
 
 ### Database Relationship Schema
 
@@ -309,8 +373,6 @@ Colours used for text
 
 ### Accessibility
 
----
-
 ## 🔭 Testing
 
 ### Validator Testing
@@ -320,8 +382,6 @@ Colours used for text
 ### User Stories Testing
 
 ### Unfixed Bugs
-
----
 
 ## 🔭 Deployment
 
@@ -334,8 +394,6 @@ Colours used for text
 ### Github
 
 ### Heroku
-
----
 
 ## 🔭 Technologies Used
 
@@ -370,10 +428,7 @@ Colours used for text
 - AmIResponsive - Used for the responsive image.
 - ResponsiveTestTool - Used to the site in various sizes. [ResponsiveTestTool](https://responsivetesttool.com/)
 
----
 ## 🔭 Components
-
----
 
 ## 🔭 Credits
 
