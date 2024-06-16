@@ -4,11 +4,11 @@ Cosmos Chronicles: A social media app for anything astronomy.
 
 ![Cosmos Chronicles Responsive Page](/src/assets/readme-images/amiresponsive.png)
 
-Cosmos Chronicles is LIVE: [Cosmos Chronicles]()
+Cosmos Chronicles is LIVE: [Cosmos Chronicles](https://cosmoschronicles-pp5-25951ae1934d.herokuapp.com/)
 
-* 🪐 Deployed Frontend:
+* 🪐 Deployed Frontend: [Cosmos Chronicles - Deployed FE](https://cosmoschronicles-pp5-25951ae1934d.herokuapp.com/)
 
-* 🪐 Deployed Backend: [Cosmos Chronicles - API](https://cc-drf-api-pp5-b19f7ab60297.herokuapp.com/)
+* 🪐 Deployed Backend: [Cosmos Chronicles - Deployed API](https://cc-drf-api-pp5-b19f7ab60297.herokuapp.com/)
 
 * 🪐 Frontend Repository: [Cosmos Chronicles (FE) - Repository](https://github.com/apita1423/cosmoschronicles_pp5)
 
@@ -157,12 +157,12 @@ Colours used for text
 <img src="/src/assets/readme-images/features-images/postnavbar.png">
 </details>
 
-<details><summary>Add Item Dropdown (Add Posts, Add News, Add Events)</summary>
-<img src="/src/assets/readme-images/features-images/dropdown.png">
-</details>
-
 <details><summary>Space Members Profiles (Users)</summary>
 <img src="/src/assets/readme-images/features-images/spacemembers.png">
+</details>
+
+<details><summary>Add Post Tooltip</summary>
+<img src="/src/assets/readme-images/features-images/addpost_tooltip.png">
 </details>
 
 <details><summary>Post Search Bar</summary>
@@ -234,11 +234,15 @@ Colours used for text
 </details>
 
 <details><summary>Profile Page</summary>
-<img src="/src/assets/readme-images/features-images/profile.png">
+<img src="/src/assets/readme-images/features-images/profilepage.png">
 </details>
 
 <details><summary>Profile Edit</summary>
-<img src="/src/assets/readme-images/features-images/edit_profile.png">
+<img src="/src/assets/readme-images/features-images/profile_edit.png">
+</details>
+
+<details><summary>Edit Profile (Image/Bio)</summary>
+<img src="/src/assets/readme-images/features-images/profile_edit_image_bio.png">
 </details>
 
 <details><summary>Edit Profile Username</summary>
@@ -270,15 +274,15 @@ Colours used for text
 </details>
 
 <details><summary>Error Login</summary>
-<img src="/src/assets/readme-images/features-images/error_signin.png">
+<img src="/src/assets/readme-images/features-images/error_login.png">
 </details>
 
 <details><summary>Error Add Post</summary>
-<img src="/src/assets/readme-images/features-images/errors_post.png">
+<img src="/src/assets/readme-images/features-images/error_post.png">
 </details>
 
 <details><summary>Error Add News</summary>
-<img src="/src/assets/readme-images/features-images/addnews.png">
+<img src="/src/assets/readme-images/features-images/error_news.png">
 </details>
 
 <details><summary>Error Add Events</summary>
@@ -291,14 +295,6 @@ Colours used for text
 
 <details><summary>404 Errors</summary>
 <img src="/src/assets/readme-images/features-images/404.png">
-</details>
-
-<details><summary></summary>
-<img src="">
-</details>
-
-<details><summary></summary>
-<img src="">
 </details>
 
 ### Future Implementations
@@ -330,7 +326,7 @@ Colours used for text
 ## 🔭 Deployment
 
 - Cosmos Chronicles (Frontend) has been deployed through Heroku.
-    - [Cosmos Chronicles]()
+    - [Cosmos Chronicles](https://cosmoschronicles-pp5-25951ae1934d.herokuapp.com/)
 
 - Cosmos Chronicles API (Backend) has been deployed through Heroku.
     - [Cosmos Chronicles API](https://cc-drf-api-pp5-b19f7ab60297.herokuapp.com/)
@@ -357,7 +353,7 @@ Colours used for text
 
 ### Database Platform Used
 
- - CI's Postgres SQL 
+ - Code Institute's PostgresSQL Database
 
 ### Tools Used
 
@@ -383,15 +379,15 @@ Colours used for text
 
 ### Code Used
 
-- I relied on CI's Moments Walkthrough for the bases of the project with the additon of news(Chronicles) and events.
+- I relied on CI's Moments Walkthrough for the bases of the project with the additon of Chronicles(News) and Events.
 
 ### Content
 
-- Content in bios and posts were done by me. ChatGPT was used for the content in the about us, events, and news pages.
+- Content in bios, posts, and comments were done by me. ChatGPT was used for the content in the About Us, Events, and News pages.
 
 ### Media
 
-Images have been sourced from Pexel, NASA Photojournal Images, and Canva.
+Images have been sourced from Pexel, NASA Photojournal Images, Canva, and images from the News section came from the Sky and Telescope site.
 
 Images sourced from NASA Photojournal library.
 
@@ -416,13 +412,48 @@ Images sourced from Pexel
 - [Space Image 14](https://www.pexels.com/photo/black-light-post-near-tree-2214035/)
 - [Space Image 15](https://www.pexels.com/photo/eye-level-photo-of-train-tracks-surrounded-with-trees-1448899/)
 - [Space Image 16](https://www.pexels.com/photo/photo-of-beach-and-palm-trees-1457812/)
+- [Space Image 17](https://www.pexels.com/photo/silhouette-of-woman-photographer-using-camera-at-night-2376991/)
 
+Images from News Section (There is a image copyright text in each News posts)
 
+- [Hubble](https://skyandtelescope.org/astronomy-news/hubble-pauses-science-operations-for-transition-to-one-gyro-mode/)
+- [Voyager 1](https://skyandtelescope.org/astronomy-news/voyager-1-and-half-its-instruments-are-back-online/)
+- [Earth Size Planet Discover](https://skyandtelescope.org/astronomy-news/astronomers-discover-new-earth-size-world-only-40-light-years-away/)
+
+Images sourced from Canva
+
+<details><summary>Canva Image 1</summary>
+<img src="/src/assets/readme-images/canva-clock.png">
+</details>
+
+<details><summary>Canva Image 2</summary>
+<img src="/src/assets/readme-images/profile-1.png">
+</details>
+
+<details><summary>Canva Image 4</summary>
+<img src="/src/assets/readme-images/profile-2.png">
+</details>
+
+<details><summary>Canva Image 5</summary>
+<img src="/src/assets/readme-images/profile-3.png">
+</details>
+
+<details><summary>Canva Image 6</summary>
+<img src="/src/assets/readme-images/profile-4.png">
+</details>
+
+<details><summary>Canva Image 7</summary>
+<img src="/src/assets/readme-images/profile-5.png">
+</details>
+
+<details><summary>Canva Image 8</summary>
+<img src="/src/assets/readme-images/profile-6.png">
+</details>
 
 ### Acknowledgments
 
 - Again, and for the last time, I'm truly grateful for my mentor, Martina. She has been the best mentor someone could ask for. 
 
-- Oisin and John from Tutor Support, who helped with a few "TINY" issues that came up. 
+- Oisin, John, and Thomas from Tutor Support, who helped with a few issues that came up. 
 
 - My husband who has encouraged me throughout the course, and, of course, my animals who have been okay with me being in front of a computer and not being a bed for them to relax. After this I can go back to being a bed. 
