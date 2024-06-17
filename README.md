@@ -447,7 +447,7 @@ Colours used for text
 
 ### Validator Testing
 
-### HTMl
+### HTML
 HTML code was tested using [W3C HTML Validator](https://validator.w3.org/). The index.html in the public folder was tested with no errors found.
 ![HTML Validation](/src/assets/readme-images/html_validator.png)
 
@@ -461,9 +461,52 @@ ESLint was used to test the React files.
 
 ### Manual Testing
 
+#### Home (Before Logging In)
+
+| Title | Expected | PASS/FAIL | GIF |
+| --- | --- | --- | --- |
+| Navbar | Only logo, Home, About Us, Login, Register appears | PASS | [Click on GIF](/src/assets/readme-images/manual-testing/home%20(1).gif)
+| Home Page | Search Bar, Posts with infinit scroll, space members appears without Follow/Unfollow button | PASS | [Click on GIF](/src/assets/readme-images/manual-testing/home%20(1).gif)
+| Search Bar | Filters Posts | PASS | [Click on GIF](/src/assets/readme-images/manual-testing/search_bar_post.gif)
+| About Us | About Us page and link to register | PASS | 
+
+
 ### User Stories Testing
 
+| USER STORY | PASS/FAIL |
+| --- | --- |
+| [USER STORY: VISITOR USER > REGISTER](https://github.com/apita1423/cosmoschronicles_pp5/issues/2) | PASS |
+| [USER STORY: REGISTERED USER > LOGIN](https://github.com/apita1423/cosmoschronicles_pp5/issues/3) | PASS |
+| [USER STORY: LOGIN USER](https://github.com/apita1423/cosmoschronicles_pp5/issues/5) | PASS |
+| [USER STORY: LOGIN USER > LOGOUT](https://github.com/apita1423/cosmoschronicles_pp5/issues/19) | PASS |
+| [USER STORY: UNREGISTERED/FIRST TIME VISITOR](https://github.com/apita1423/cosmoschronicles_pp5/issues/1) | PASS |
+| [USER STORY: UNREGISTERED/REGISTER USER > SEARCH BAR](https://github.com/apita1423/cosmoschronicles_pp5/issues/4) | PASS |
+| [USER STORY: LOGIN USER > ADD POST](https://github.com/apita1423/cosmoschronicles_pp5/issues/6) | PASS |
+| [USER STORY: LIKE/UNLIKE POSTS](https://github.com/apita1423/cosmoschronicles_pp5/issues/7) | PASS |
+| [USER STORY: LOGIN USER > UPDATE/DELETE POSTS](https://github.com/apita1423/cosmoschronicles_pp5/issues/10) | PASS |
+| [USER STORY: LOGIN USER > COMMENT](https://github.com/apita1423/cosmoschronicles_pp5/issues/8) | PASS |
+| [USER STORY: LOGIN USER > COMMENT EDIT/DELETE](https://github.com/apita1423/cosmoschronicles_pp5/issues/9) | PASS |
+| [USER STORY: LOGIN USER > EDIT PROFILE](https://github.com/apita1423/cosmoschronicles_pp5/issues/13) | PASS |
+| [USER STORY: LOGIN USER > VIEW PROFILE](https://github.com/apita1423/cosmoschronicles_pp5/issues/12) | PASS |
+| [USER STORY: LOGIN USER > FOLLOW/UNFOLLOW MEMBERS](https://github.com/apita1423/cosmoschronicles_pp5/issues/14) | PASS |
+| [USER STORY: LOGIN USER > FEED](https://github.com/apita1423/cosmoschronicles_pp5/issues/17) | PASS |
+| [USER STORY: LOGIN USER > LIKED](https://github.com/apita1423/cosmoschronicles_pp5/issues/18) | PASS |
+| [USER STORY: LOGIN USER > NEWS](https://github.com/apita1423/cosmoschronicles_pp5/issues/15) | PASS |
+| [USER STORY: LOGIN USER > SEARCH BAR NEWS](https://github.com/apita1423/cosmoschronicles_pp5/issues/20) | PASS |
+| [USER STORY: LOGIN USER > ADD NEWS](https://github.com/apita1423/cosmoschronicles_pp5/issues/23) | PASS |
+| [USER STORY: UNREGISTERED/REGISTERED USER > NEWS UPDATE](https://github.com/apita1423/cosmoschronicles_pp5/issues/11) | PASS |
+| [USER STORY: LOGIN USER > EVENTS](https://github.com/apita1423/cosmoschronicles_pp5/issues/16) | PASS |
+| [USER STORY: LOGIN USER > SEARCH BAR EVENTS](https://github.com/apita1423/cosmoschronicles_pp5/issues/21) | PASS |
+| [USER STORY: LOGIN USER > ADD EVENT](https://github.com/apita1423/cosmoschronicles_pp5/issues/22) | PASS |
+| [ADMIN STORY: DELETE PROFILES](https://github.com/apita1423/cosmoschronicles_pp5/issues/24) | PASS |
+
+
 ### Unfixed Bugs
+
+- 401 console error that was reported in the Moments Walkthrough.
+![401 Error](/src/assets/readme-images/401.png)
+
+
 
 ## 🔭 Deployment
 
