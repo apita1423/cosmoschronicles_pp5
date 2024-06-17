@@ -85,6 +85,67 @@ Who can use this site? Anyone from astrobiologists who might do this on a daily 
 
 ## 🔭 User Stories
 
+One user story was not implemented and was left for future implementations.
+ - [USER STORY: UNREGISTERED/REGISTERED USER > NEWS UPDATE](https://github.com/apita1423/cosmoschronicles_pp5/issues/11)
+
+#### User Stories 
+
+- Authentication
+    - [USER STORY: VISITOR USER > REGISTER](https://github.com/apita1423/cosmoschronicles_pp5/issues/2)
+    - [USER STORY: REGISTERED USER > LOGIN](https://github.com/apita1423/cosmoschronicles_pp5/issues/3)
+    - [USER STORY: LOGIN USER](https://github.com/apita1423/cosmoschronicles_pp5/issues/5)
+    - [USER STORY: LOGIN USER > LOGOUT](https://github.com/apita1423/cosmoschronicles_pp5/issues/19)
+    - [USER STORY: UNREGISTERED/FIRST TIME VISITOR](https://github.com/apita1423/cosmoschronicles_pp5/issues/1)
+    - [ADMIN STORY: DELETE PROFILES](https://github.com/apita1423/cosmoschronicles_pp5/issues/24)
+
+- Posts
+    - [USER STORY: UNREGISTERED/REGISTER USER > SEARCH BAR](https://github.com/apita1423/cosmoschronicles_pp5/issues/4)
+    - [USER STORY: LOGIN USER > ADD POST](https://github.com/apita1423/cosmoschronicles_pp5/issues/6)
+    - [USER STORY: LIKE/UNLIKE POSTS](https://github.com/apita1423/cosmoschronicles_pp5/issues/7)
+    - [USER STORY: LOGIN USER > UPDATE/DELETE POSTS](https://github.com/apita1423/cosmoschronicles_pp5/issues/10)
+
+- Comments
+    - [USER STORY: LOGIN USER > COMMENT](https://github.com/apita1423/cosmoschronicles_pp5/issues/8)
+    - [USER STORY: LOGIN USER > COMMENT EDIT/DELETE](https://github.com/apita1423/cosmoschronicles_pp5/issues/9)
+
+- Profiles
+    - [USER STORY: LOGIN USER > EDIT PROFILE](https://github.com/apita1423/cosmoschronicles_pp5/issues/13)
+    - [USER STORY: LOGIN USER > VIEW PROFILE](https://github.com/apita1423/cosmoschronicles_pp5/issues/12)
+
+- Features
+    - [USER STORY: LOGIN USER > FOLLOW/UNFOLLOW MEMBERS](https://github.com/apita1423/cosmoschronicles_pp5/issues/14)
+    - [USER STORY: LOGIN USER > FEED](https://github.com/apita1423/cosmoschronicles_pp5/issues/17)
+    - [USER STORY: LOGIN USER > LIKED](https://github.com/apita1423/cosmoschronicles_pp5/issues/18)
+  
+- Chronicles(News)
+    - [USER STORY: LOGIN USER > NEWS](https://github.com/apita1423/cosmoschronicles_pp5/issues/15)
+    - [USER STORY: LOGIN USER > SEARCH BAR NEWS](https://github.com/apita1423/cosmoschronicles_pp5/issues/20)
+    - [USER STORY: LOGIN USER > ADD NEWS](https://github.com/apita1423/cosmoschronicles_pp5/issues/23)
+    - [USER STORY: UNREGISTERED/REGISTERED USER > NEWS UPDATE](https://github.com/apita1423/cosmoschronicles_pp5/issues/11)
+
+- Events
+    - [USER STORY: LOGIN USER > EVENTS](https://github.com/apita1423/cosmoschronicles_pp5/issues/16)
+    - [USER STORY: LOGIN USER > SEARCH BAR EVENTS](https://github.com/apita1423/cosmoschronicles_pp5/issues/21)
+    - [USER STORY: LOGIN USER > ADD EVENT](https://github.com/apita1423/cosmoschronicles_pp5/issues/22)
+
+### Agile Development
+
+The Agile Methodology was the project managment used for this project. For milestones, I used eight epics to bundle the user stories: Authentication, Posts, Comments, Profile, Features, Chronicles(News), Events, and README. The Kanban board had four different title: Todo, In Progress, Done, and Future. The MoSCoW Method labels were used: must-have, should-have, could-have, wont-have, readme.
+
+### Kanban
+
+The Kanban board was split into four sections: Todo, In Progress, Done, and Future. The Future section idea came from my PP4 project where I put User Stories that are labelled as could have or wont have for future implementations.
+![Kanban Board](/src/assets/readme-images/kanban.png)
+
+### Milestones
+
+I created the EPIC the same way as my PP4. I found this way easier especially for the size of the project and time. I had eight EPICs: Authentication, Posts, Comments, Profile, Features, Chronciles(News), Events, and README.
+![Milestones](/src/assets/readme-images/milestones.png)
+
+### MoSCow Method
+
+The MoSCoW Method Labels I used were: must-have, should-have, could-have, wont-have, and the addition of readme. The readme label is used for the README documentation.
+![MoSCoW](/src/assets/readme-images/labels.png)
 
 ## 🔭 Design
 
@@ -373,13 +434,30 @@ Colours used for text
 
 ### Accessibility
 
+- Lighthouse Desktop Version
+![Lighthouse Desktop](/src/assets/readme-images/lighthouse_desktop.png)
+
+- Lighthouse Mobile Version
+![Lighthouse Mobile](/src/assets/readme-images/lighthouse_mobile.png)
+
+- WAVE - Web Accessibility Evaluation Tool
+![WAVE Evaluation Tool](/src/assets/readme-images/wave.png)
+
 ## 🔭 Testing
 
 ### Validator Testing
 
+### HTMl
+HTML code was tested using [W3C HTML Validator](https://validator.w3.org/). The index.html in the public folder was tested with no errors found.
+![HTML Validation](/src/assets/readme-images/html_validator.png)
+
 ### CSS
-CSS code was tested using [W3C CSS Validator](https://jigsaw.w3.org/css-validator/). All css passed with no errors.
+CSS code was tested using [W3C CSS Validator](https://jigsaw.w3.org/css-validator/). All CSS passed with no errors.
 ![CSS Validation](/src/assets/readme-images/css_validator.png)
+
+### ESLint
+ESLint was used to test the React files.
+![ESLint Validation](/src/assets/readme-images/eslint.png)
 
 ### Manual Testing
 
@@ -397,7 +475,32 @@ CSS code was tested using [W3C CSS Validator](https://jigsaw.w3.org/css-validato
 
 ### Github
 
+#### Create Repository
+
+1. Go to [GitHub](https://github.com/) and login with your credentials.
+2. Create a new repository by using [CI's React Template](https://github.com/Code-Institute-Org/react-ci-template).
+3. Click on the 'Use this template' dropdown and click on 'Create a new repository'.
+4. Add a 'Repository name' (it show if the name is available underneath the input). Make sure the 'Public' radio button is clicked.
+5. Click on 'Create repository' button.
+
+#### Fork Repository
+
+1. In the project's GitHub repository, click 'Fork' and then 'Create a Fork'.
+2. Change the name and description of the fork.
+3. Select to copy only the main branch or all branches.
+4. Click 'Create a Fork'.
+5. A newly created repository will appear in the GitHub repository. 
+
 ### Heroku
+
+1. Go to [Heroku](https://id.heroku.com/login) and login with your credentials.
+2. Sign in with your multifactor pin.
+3. Select "New".
+4. Create a unique name (it should turn green if the name is available) and select the location.
+5. Under the 'Deploy' button, connect to your GitHub repository.
+6. Once connected, pick the repository that you will want to connect to.
+7. Under 'Manual Deploy', click on Deploy Branch.
+8. Once manual deployment is successful click on 'View' or scroll up and click on 'Open App'
 
 ## 🔭 Technologies Used
 
@@ -406,6 +509,7 @@ CSS code was tested using [W3C CSS Validator](https://jigsaw.w3.org/css-validato
 - HTML
 - CSS
 - Javascript
+- React
 
 ### Frameworks Used
 
@@ -433,6 +537,16 @@ CSS code was tested using [W3C CSS Validator](https://jigsaw.w3.org/css-validato
 - ResponsiveTestTool - Used to test the site in various sizes. [ResponsiveTestTool](https://responsivetesttool.com/)
 
 ## 🔭 Components
+
+- <strong>Asset.js</strong> - Houses the spinner, src, and message. The spinner shows when the parts of the site is loading and when scrolling down through the post (part of the infinite scroll). The Asset component is used throughout the code: ProfilePage.js, PopularProfiles.js, PostsPage.js, PostPage.js, PostCreateForm.js, EventsPage.js, ChroniclesPage.js, ChronicleEditForm.js, ChronicleCreateForm.js, AboutUs.js, NotFound.js, and NavBar.js.
+
+- <strong>Avatar.js</strong> - Used to store the profile avatar of the users. The Avatar component was used in NavBar.js, Chronicle.js, Comment.js, CommentCreateForm.js, Event.js, Post.js, and Profile.js.
+
+- <strong>MoreDropdown.js</strong> -  Used for the edit/update of comments, posts, profiles, events, and news. For the profiles, it contains edit profile, edit username, and edit password. For the comments, posts, events, and news it contains edit or delete. The MoreDropdown component is used in Chronicle.js, Comment.js, Event.js, Post.js, and ProfilePage.js.
+
+- <strong>NavBar.js</strong> - Used to display the navbar across all pages. The NavBar was placed in the App.js where all the routes for each page is located.
+
+- <strong>NotFound.js</strong> - Used to house the code for displaying the error message. If a invalid url is searched it would show the NotFound component which house the image and message for the 404 error. The NotFound.js component was also placed in the App.js.
 
 ## 🔭 Credits
 
