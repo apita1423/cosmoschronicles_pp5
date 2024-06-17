@@ -1,16 +1,16 @@
 # 🛰️ Cosmos Chronicles 🛰️
 
-Cosmos Chronicles: A social media app for anything astronomy.
+Cosmos Chronicles is a social media app that brings users who love anything astronomy together in one place. A user can post, comment, like, and follower other users. Events and news happening in the astronomy world are also posted.
 
 ![Cosmos Chronicles Responsive Page](/src/assets/readme-images/amiresponsive.png)
 
-* 🪐 Deployed Frontend: [Cosmos Chronicles - Deployed FE](https://cosmoschronicles-pp5-25951ae1934d.herokuapp.com/)
+* 🪐 [Cosmos Chronicles - Deployed FE](https://cosmoschronicles-pp5-25951ae1934d.herokuapp.com/)
 
-* 🪐 Deployed Backend: [Cosmos Chronicles - Deployed API](https://cc-drf-api-pp5-b19f7ab60297.herokuapp.com/)
+* 🪐 [Cosmos Chronicles - Deployed BE](https://cc-drf-api-pp5-b19f7ab60297.herokuapp.com/)
 
-* 🪐 Frontend Repository: [Cosmos Chronicles (FE) - Repository](https://github.com/apita1423/cosmoschronicles_pp5)
+* 🪐 [Cosmos Chronicles - Repository FE](https://github.com/apita1423/cosmoschronicles_pp5)
 
-* 🪐 Backend Repository: [Cosmos Chronicles API - Repository](https://github.com/apita1423/cc-drf-api-pp5)
+* 🪐 [Cosmos Chronicles - Repository BE](https://github.com/apita1423/cc-drf-api-pp5)
 
 
 ## 🔭 Table of Contents
@@ -179,7 +179,7 @@ Colours used for text
 </details>
 
 ### Database Relationship Schema
-
+![Database Relationship Schema](/src/assets/readme-images/pp5-database.png)
     
 ## 🔭 Features
 
@@ -377,6 +377,10 @@ Colours used for text
 
 ### Validator Testing
 
+### CSS
+CSS code was tested using [W3C CSS Validator](https://jigsaw.w3.org/css-validator/). All css passed with no errors.
+![CSS Validation](/src/assets/readme-images/css_validator.png)
+
 ### Manual Testing
 
 ### User Stories Testing
@@ -425,8 +429,8 @@ Colours used for text
 - CSS Gradient - Used to great the colours gradient for the background. [CSS Gradient](https://cssgradient.io/)
 - Canva - Used for the design of the logo, notfound page image, and astronomical clock image.
 - ChatGPT - Used for About Us, News, and Events content.
-- AmIResponsive - Used for the responsive image.
-- ResponsiveTestTool - Used to the site in various sizes. [ResponsiveTestTool](https://responsivetesttool.com/)
+- AmIResponsive - Used for the responsive image in README.
+- ResponsiveTestTool - Used to test the site in various sizes. [ResponsiveTestTool](https://responsivetesttool.com/)
 
 ## 🔭 Components
 
