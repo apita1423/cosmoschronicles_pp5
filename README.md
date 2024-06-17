@@ -58,8 +58,8 @@ Cosmos Chronicles is a social media app that brings users who love anything astr
 
 - [Deployment](#deployment)
     - [Github](#github)
+    - [Project Setup](#project-setup)
     - [Heroku](#Heroku)
-    - [Fork Repository](#fork-repository)
 
 - [Credits](#credits)
 
@@ -443,6 +443,40 @@ Colours used for text
 - WAVE - Web Accessibility Evaluation Tool
 ![WAVE Evaluation Tool](/src/assets/readme-images/wave.png)
 
+## 🔭 Technologies Used
+
+### Languages Used
+
+- HTML
+- CSS
+- Javascript
+- React
+
+### Frameworks Used
+
+- ReactJS
+- Cloudinary
+- React-Bootstrap 
+
+### Database Platform Used
+
+ - Code Institute's PostgresSQL Database
+
+### Tools Used
+
+- VSCode - IDE used to create both Cosmos Chronicles' frontend and backend.
+- Github - To store the Cosmos Chronicles Repo.
+- Font Awesome - Icons used throughout the project.
+- Balsamiq - Used to create the wireframes.
+- Pexel - Images used for the posts.
+- NASA PhotoJournal - Used for the images of Saturn and Titan. [NASA Photjournal](https://photojournal.jpl.nasa.gov/)
+- Coolors - Used to pick colours.
+- CSS Gradient - Used to great the colours gradient for the background. [CSS Gradient](https://cssgradient.io/)
+- Canva - Used for the design of the logo, notfound page image, and astronomical clock image.
+- ChatGPT - Used for About Us, News, and Events content.
+- AmIResponsive - Used for the responsive image in README.
+- ResponsiveTestTool - Used to test the site in various sizes. [ResponsiveTestTool](https://responsivetesttool.com/)
+
 ## 🔭 Testing
 
 ### Validator Testing
@@ -461,15 +495,94 @@ ESLint was used to test the React files.
 
 ### Manual Testing
 
-#### Home (Before Logging In)
+### Home (Before Logging In)
 
-| Title | Expected | PASS/FAIL | GIF |
-| --- | --- | --- | --- |
-| Navbar | Only logo, Home, About Us, Login, Register appears | PASS | [Click on GIF](/src/assets/readme-images/manual-testing/home%20(1).gif)
-| Home Page | Search Bar, Posts with infinit scroll, space members appears without Follow/Unfollow button | PASS | [Click on GIF](/src/assets/readme-images/manual-testing/home%20(1).gif)
-| Search Bar | Filters Posts | PASS | [Click on GIF](/src/assets/readme-images/manual-testing/search_bar_post.gif)
-| About Us | About Us page and link to register | PASS | 
+| Title | Expected | PASS/FAIL |
+| --- | --- | --- |
+| Navbar | Only logo, Home, About Us, Login, Register appears | PASS |
+| Home Page | Search Bar, Posts with infinit scroll, space members appears without Follow/Unfollow button | PASS |
+| Search Bar | Filters Posts | PASS |
+| About Us | About Us page and link to register | PASS |
+| Register/Login Now | Click on register or login now redirects to either Register/Login |  PASS |
+| Register | Register | PASS |
+| Login | Login | PASS |
 
+### Home (After Loggin In)
+
+| Title | Expected | PASS/FAIL |
+| --- | --- | --- |
+| NavBar | Add Post, News, Events, Home, News, Events, Feed, Liked, Profile Avatar, Logout is visible/clickable | PASS |
+| Space Mission Member Profile Avatar | Follow/Unfollow Button is visible/clickable | PASS |
+| Search Bar | Search bar is visible and can input text and filters | PASS |
+| Infinite Scroll | Scrolling automatically populates more posts | PASS |
+| Like/Comment Icons | Like/Comment icons visible and clickable | PASS |
+| Single Posts | Clicking into a post redirects to a single post | PASS |
+| Add Post | Add Post is visible and clickable on navbar. When clicked directs to form with title and content | PASS |
+| Add Post Errors | Errors appear when Create is clicked first | PASS |
+
+### Profile
+
+| Title | Expected | PASS/FAIL |
+| --- | --- | --- |
+| Space Mission Members | All profile members avatar is visible and clickable | PASS |
+| Space Mission Members Avatar | Profile avatar click redirects to profile page | PASS |
+| Profile Page | Has posts or no results found image. It has username and number of posts/followers/following | PASS |
+| Profile Page Edit | Three dots is visible and clickable and dropdown shows edit username, password, or profile | PASS |
+
+### News
+
+| Title | Expected | PASS/FAIL |
+| --- | --- | --- |
+| Search Bar | Search bar is visible and can input text and filters | PASS |
+| News Button | News button is visible and clickable. When clicked redirects to the News section. | PASS |
+| News page | News is listed one after another | PASS |
+| News single post | When single news post is clicked redirect to the single post on one page | PASS |
+| Add News | Add News is visible and clickable in the navbar | PASS |
+| Add News Form | Form input includes images, title, description, author, published on, image copyright, and category dropdown | PASS |
+| Add News Error | Errors appear when Create News is clicked first or when an input is not filled | PASS |
+| News Edit/Delete | Owners of news have three dots when clicked edit/delete icon appears and is clickable | PASS |
+
+### Events
+
+| Title | Expected | PASS/FAIL |
+| --- | --- | --- |
+| Events Button | Events button is visible and clickable. When clicked redirects to the Events section | PASS |
+| Events page | Events is listed one after another | PASS |
+| Links in Event posts | Link are clickable and open in a different tab | PASS |
+| Event single post | When single event post is clicked it redirects to the single event post on one page | PASS |
+| Add Event | Add Event is visible and clickable in the navbar. | PASS |
+| Add Event Form | Form input includes title, description, date, time, city, country, audience, price, and url | PASS |
+| Add Event Form Error | Errors appear when Create Event is clicked first or when an input is not filled | PASS |
+| Events Edit/Delete | Owners of created events have three dots when clicked edit/delete icon appears and is clickable | PASS |
+
+### Comments
+
+| Title | Expected | PASS/FAIL |
+| --- | --- | --- |
+| Comment Icon | Click on the comment icon will redirect to the single post | PASS |
+| Comment on Post | User can add a comment in the comment input and click on post. Comment should be visible | PASS |
+| Comment Edit/Delete | Owners of comments have three dots when clicked edit/delete icon appears and is clickable | PASS |
+
+### Like 
+
+| Title | Expected | PASS/FAIL |
+| --- | --- | --- |
+| Like Icon | Like icon is visible and clickable | PASS |
+| Unlike | User can unlike a post they liked | PASS |
+| Like Error | User can't like their own post | PASS |
+| Like number | Like number increased or decreases if liked or unliked | PASS |
+
+### Feed 
+
+| Title | Expected | PASS/FAIL |
+| --- | --- | --- |
+| Feed | Posts from followers will populated | PASS |
+
+### Liked
+
+| Title | Expected | PASS/FAIL |
+| --- | --- | --- |
+| Liked | Posts that were liked populate | PASS |
 
 ### User Stories Testing
 
@@ -500,13 +613,22 @@ ESLint was used to test the React files.
 | [USER STORY: LOGIN USER > ADD EVENT](https://github.com/apita1423/cosmoschronicles_pp5/issues/22) | PASS |
 | [ADMIN STORY: DELETE PROFILES](https://github.com/apita1423/cosmoschronicles_pp5/issues/24) | PASS |
 
-
 ### Unfixed Bugs
 
 - 401 console error that was reported in the Moments Walkthrough.
 ![401 Error](/src/assets/readme-images/401.png)
 
+## 🔭 Components
 
+- <strong>Asset.js</strong> - Houses the spinner, src, and message. The spinner shows when the parts of the site is loading and when scrolling down through the post (part of the infinite scroll). The Asset component is used throughout the code: ProfilePage.js, PopularProfiles.js, PostsPage.js, PostPage.js, PostCreateForm.js, EventsPage.js, ChroniclesPage.js, ChronicleEditForm.js, ChronicleCreateForm.js, AboutUs.js, NotFound.js, and NavBar.js.
+
+- <strong>Avatar.js</strong> - Used to store the profile avatar of the users. The Avatar component was used in NavBar.js, Chronicle.js, Comment.js, CommentCreateForm.js, Event.js, Post.js, and Profile.js.
+
+- <strong>MoreDropdown.js</strong> -  Used for the edit/update of comments, posts, profiles, events, and news. For the profiles, it contains edit profile, edit username, and edit password. For the comments, posts, events, and news it contains edit or delete. The MoreDropdown component is used in Chronicle.js, Comment.js, Event.js, Post.js, and ProfilePage.js.
+
+- <strong>NavBar.js</strong> - Used to display the navbar across all pages. The NavBar was placed in the App.js where all the routes for each page is located.
+
+- <strong>NotFound.js</strong> - Used to house the code for displaying the error message. If a invalid url is searched it would show the NotFound component which house the image and message for the 404 error. The NotFound.js component was also placed in the App.js.
 
 ## 🔭 Deployment
 
@@ -584,52 +706,6 @@ web: serve -s build
 6. Once connected, pick the repository that you will want to connect to.
 7. Under 'Manual Deploy', click on Deploy Branch.
 8. Once manual deployment is successful click on 'View' or scroll up and click on 'Open App'
-
-## 🔭 Technologies Used
-
-### Languages Used
-
-- HTML
-- CSS
-- Javascript
-- React
-
-### Frameworks Used
-
-- ReactJS
-- Cloudinary
-- React-Bootstrap 
-
-### Database Platform Used
-
- - Code Institute's PostgresSQL Database
-
-### Tools Used
-
-- VSCode - IDE used to create both Cosmos Chronicles' frontend and backend.
-- Github - To store the Cosmos Chronicles Repo.
-- Font Awesome - Icons used throughout the project.
-- Balsamiq - Used to create the wireframes.
-- Pexel - Images used for the posts.
-- NASA PhotoJournal - Used for the images of Saturn and Titan. [NASA Photjournal](https://photojournal.jpl.nasa.gov/)
-- Coolors - Used to pick colours.
-- CSS Gradient - Used to great the colours gradient for the background. [CSS Gradient](https://cssgradient.io/)
-- Canva - Used for the design of the logo, notfound page image, and astronomical clock image.
-- ChatGPT - Used for About Us, News, and Events content.
-- AmIResponsive - Used for the responsive image in README.
-- ResponsiveTestTool - Used to test the site in various sizes. [ResponsiveTestTool](https://responsivetesttool.com/)
-
-## 🔭 Components
-
-- <strong>Asset.js</strong> - Houses the spinner, src, and message. The spinner shows when the parts of the site is loading and when scrolling down through the post (part of the infinite scroll). The Asset component is used throughout the code: ProfilePage.js, PopularProfiles.js, PostsPage.js, PostPage.js, PostCreateForm.js, EventsPage.js, ChroniclesPage.js, ChronicleEditForm.js, ChronicleCreateForm.js, AboutUs.js, NotFound.js, and NavBar.js.
-
-- <strong>Avatar.js</strong> - Used to store the profile avatar of the users. The Avatar component was used in NavBar.js, Chronicle.js, Comment.js, CommentCreateForm.js, Event.js, Post.js, and Profile.js.
-
-- <strong>MoreDropdown.js</strong> -  Used for the edit/update of comments, posts, profiles, events, and news. For the profiles, it contains edit profile, edit username, and edit password. For the comments, posts, events, and news it contains edit or delete. The MoreDropdown component is used in Chronicle.js, Comment.js, Event.js, Post.js, and ProfilePage.js.
-
-- <strong>NavBar.js</strong> - Used to display the navbar across all pages. The NavBar was placed in the App.js where all the routes for each page is located.
-
-- <strong>NotFound.js</strong> - Used to house the code for displaying the error message. If a invalid url is searched it would show the NotFound component which house the image and message for the 404 error. The NotFound.js component was also placed in the App.js.
 
 ## 🔭 Credits
 
