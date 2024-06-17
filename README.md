@@ -534,6 +534,46 @@ ESLint was used to test the React files.
 4. Click 'Create a Fork'.
 5. A newly created repository will appear in the GitHub repository. 
 
+### Project Setup
+
+* I use VSCode for both frontend and backend.
+
+### React 
+
+1. Create a new workspace using [CI's React Template](https://github.com/Code-Institute-Org/react-ci-template).
+2. Install React.js (Note: In the Moments Walkthrough, when using this command all the dependencies will be installed.)
+```
+npx create-react-app . --use-npm
+npm start
+```
+3. Install packages:
+```
+npm install react-bootstrap@1.6.3 bootstrap@4.6.0
+npm install react-router-dom@5.3.0
+```
+
+### React - Connecting to API
+
+1. Go to the project's API that was deployed in Heroku. 
+2. In the Settings tab, click on "Reveal Config Vars".
+3. Add these config:
+```
+KEY: CLIENT_ORIGIN VALUE: https://cosmoschronicles-pp5-25951ae1934d.herokuapp.com
+KEY: CLIENT_ORIGIN_DEV VALUE: http://localhost:3000
+```
+4. Remember to remove trailing `/`.
+
+### React - Deploying to Heroku
+
+1. In the scripts section in `package.json`, add this command:
+``` 
+"heroku-prebuild": npm install -g serve"
+```
+2. Add a Procfile at the root of the project, add this command:
+```
+web: serve -s build
+```
+
 ### Heroku
 
 1. Go to [Heroku](https://id.heroku.com/login) and login with your credentials.
