@@ -434,11 +434,19 @@ Colours used for text
 
 ### Accessibility
 
-- Lighthouse Desktop Version
+For the Lighthouse Performance number, I tried to fix the score by downsizing the images, but was only able to get a few points higher for both desktop and mobile version.
+
+- Lighthouse Desktop Version (1)
 ![Lighthouse Desktop](/src/assets/readme-images/lighthouse_desktop.png)
 
-- Lighthouse Mobile Version
+- Lighthouse Mobile Version (1)
 ![Lighthouse Mobile](/src/assets/readme-images/lighthouse_mobile.png)
+
+- Lighthouse Desktop Version (2) 
+![Lighthouse Desktop 2](/src/assets/readme-images/lighthouse_desktop_2.png)
+
+- Lighthouse Mobile Version (2)
+![Lighthouse Mobile](/src/assets/readme-images/lighthouse_mobile_2.png)
 
 - WAVE - Web Accessibility Evaluation Tool
 ![WAVE Evaluation Tool](/src/assets/readme-images/wave.png)
@@ -464,18 +472,18 @@ Colours used for text
 
 ### Tools Used
 
-- VSCode - IDE used to create both Cosmos Chronicles' frontend and backend.
-- Github - To store the Cosmos Chronicles Repo.
-- Font Awesome - Icons used throughout the project.
-- Balsamiq - Used to create the wireframes.
-- Pexel - Images used for the posts.
-- NASA PhotoJournal - Used for the images of Saturn and Titan. [NASA Photjournal](https://photojournal.jpl.nasa.gov/)
-- Coolors - Used to pick colours.
-- CSS Gradient - Used to great the colours gradient for the background. [CSS Gradient](https://cssgradient.io/)
-- Canva - Used for the design of the logo, notfound page image, and astronomical clock image.
-- ChatGPT - Used for About Us, News, and Events content.
-- AmIResponsive - Used for the responsive image in README.
-- ResponsiveTestTool - Used to test the site in various sizes. [ResponsiveTestTool](https://responsivetesttool.com/)
+- [VSCode](https://code.visualstudio.com/) - IDE used to create both Cosmos Chronicles' frontend and backend.
+- [Github](https://github.com/) - To store the Cosmos Chronicles Repo.
+- [Font Awesome](https://fontawesome.com/) - Icons used throughout the project.
+- [Balsamiq](https://balsamiq.com/) - Used to create the wireframes.
+- [Pexel](https://www.pexels.com/) - Images used for the posts.
+- [NASA Photjournal](https://photojournal.jpl.nasa.gov/) - Used for the images of Saturn and Titan. 
+- [Coolors](https://coolors.co/) - Used to pick colours.
+- [CSS Gradient](https://cssgradient.io/) - Used to great the colours gradient for the background. 
+- [Canva](https://www.canva.com/en_gb/) - Used for the design of the logo, notfound page image, and astronomical clock image.
+- [ChatGPT](https://chatgpt.com/auth/login) - Used for About Us, News, and Events content.
+- [AmIResponsive](https://ui.dev/amiresponsive) - Used for the responsive image in README.
+- [ResponsiveTestTool](https://responsivetesttool.com/) - Used to test the site in various sizes. 
 
 ## 🔭 Testing
 
