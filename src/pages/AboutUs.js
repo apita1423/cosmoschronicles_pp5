@@ -31,7 +31,7 @@ function aboutUs() {
                 <b>
                     <i className="fas fa-user-astronaut"></i> Community Engagement:
                 </b>{" "}
-                Join a diverse and inclusive comunity of astronomy lovers. Share your stargazing experiences, celestial photography, and cosmic discoveries with fellow enthusiasts.
+                Join a diverse and inclusive community of astronomy lovers. Share your stargazing experiences, celestial photography, and cosmic discoveries with fellow enthusiasts.
             </p>
             <p className={styles.Paragraph}>
                 <b>
@@ -44,13 +44,13 @@ function aboutUs() {
                     <i className="fas fa-user-astronaut"></i>
                     Educational Content:
                 </b>{" "}
-                Have acces to a wealth of resources including articles, tutorials, and lives streams from experts, to deepen your understanding of the universe.
+                Have acces to a wealth of resources including articles, tutorials, and live streams from experts, to deepen your understanding of the universe.
             </p>
             <p className={styles.Paragraph}>
                 <b>
                     <i className="fas fa-user-astronaut"></i>Collaborative Projects:
                 </b>{" "}
-                Engage in citizen science projects and contribute to real astronomical research alongside professionals and institutions. <b>Coming Soon</b>
+                <b>COMING SOON</b> Engage in citizen science projects and contribute to real astronomical research alongside professionals and institutions. 
             </p>
             <hr />
             <h2>

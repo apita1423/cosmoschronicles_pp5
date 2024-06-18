@@ -1,6 +1,6 @@
 # 🛰️ Cosmos Chronicles 🛰️
 
-Cosmos Chronicles is a social media app that brings users who love anything astronomy together in one place. A user can post, comment, like, and follower other users. Events and news happening in the astronomy world are also posted.
+Cosmos Chronicles is a social media app that brings users who love anything astronomy together in one place. A user can post, comment, like, and follower other users. Events and News happening in the astronomy world are also posted.
 
 ![Cosmos Chronicles Responsive Page](/src/assets/readme-images/amiresponsive.png)
 
@@ -23,9 +23,10 @@ Cosmos Chronicles is a social media app that brings users who love anything astr
     - [Target Audience](#target-audience)
 
 - [User Stories](#user-stories)
-    - [First Time Visitor Goals](#first-time-visitor-goals)
-    - [Registered User Goals](#registered-user-goals)
     - [Agile Development](#agile-development)
+    - [Kanban](#kanban)
+    - [Milestones](#milestones)
+    - [MoSCow Method](#moscow-method)
 
 - [Design](#design)
 
@@ -44,8 +45,9 @@ Cosmos Chronicles is a social media app that brings users who love anything astr
 - [Technologies Used](#technologies-used)
 
     - [Languages Used](#languages-used)
-    - [Framework, Libraries, and Programs Used](#framework-libraries-and-programs-used)
+    - [Frameworks Used](#frameworks-used)
     - [Database Platform Used](#database-platform-used)
+    - [Tools Used](#tools-used)
 
 - [Testing](#testing)
 
@@ -59,6 +61,7 @@ Cosmos Chronicles is a social media app that brings users who love anything astr
 - [Deployment](#deployment)
     - [Github](#github)
     - [Project Setup](#project-setup)
+    - [React](#react)
     - [Heroku](#Heroku)
 
 - [Credits](#credits)
@@ -77,7 +80,7 @@ Cosmos Chronicles is my fifth project with Code Institute. The idea for Cosmos C
 
 ### Project Goals
 
-Cosmos Chronicles was designed for space enthusiants. Cosmos Chronicles is for anyone whose passion is, as they say in Star Trek, "The Final Frontier"! A place where user can posts about what they saw through their telescope or what their students did for space-themed day. A place for news about launches, update on various missions, or what is happening across space agencies can be posted. Also, a place where events can be posted and people would know where they can meet to experience space events. 
+Cosmos Chronicles was designed for space enthusiants. Cosmos Chronicles is for anyone whose passion is, as they say in Star Trek, "The Final Frontier"! A place where user can posts about what they saw through their telescope or what their students did for space-themed day. A place for news about launches, updates on various missions, or what is happening across space agencies. Also, a place where events can be posted and people would know where they can meet to experience space events. 
 
 ### Audience
 
@@ -130,21 +133,24 @@ One user story was not implemented and was left for future implementations.
 
 ### Agile Development
 
-The Agile Methodology was the project managment used for this project. For milestones, I used eight epics to bundle the user stories: Authentication, Posts, Comments, Profile, Features, Chronicles(News), Events, and README. The Kanban board had four different title: Todo, In Progress, Done, and Future. The MoSCoW Method labels were used: must-have, should-have, could-have, wont-have, readme.
+The Agile Methodology was the project managment tool used for this project. For milestones, I used eight epics to bundle the user stories: Authentication, Posts, Comments, Profile, Features, Chronicles(News), Events, and README. The Kanban board had four different title: Todo, In Progress, Done, and Future. The MoSCoW Method labels were used: must-have, should-have, could-have, wont-have, readme.
 
 ### Kanban
 
 The Kanban board was split into four sections: Todo, In Progress, Done, and Future. The Future section idea came from my PP4 project where I put User Stories that are labelled as could have or wont have for future implementations.
+
 ![Kanban Board](/src/assets/readme-images/kanban.png)
 
 ### Milestones
 
 I created the EPIC the same way as my PP4. I found this way easier especially for the size of the project and time. I had eight EPICs: Authentication, Posts, Comments, Profile, Features, Chronciles(News), Events, and README.
+
 ![Milestones](/src/assets/readme-images/milestones.png)
 
 ### MoSCow Method
 
 The MoSCoW Method Labels I used were: must-have, should-have, could-have, wont-have, and the addition of readme. The readme label is used for the README documentation.
+
 ![MoSCoW](/src/assets/readme-images/labels.png)
 
 ## 🔭 Design
@@ -165,7 +171,7 @@ Colours used for text
 
 ### Imagery
 
-- Images have been obtained from Pexel, NASA Photojournal, Canva, and News photos came from Sky and Telescope news section (each image has a image copyright input). One photo came from a co-workers testing the site (photo of the chocolate cake).
+- Images have been obtained from Pexel, NASA Photojournal, Canva, and News photos came from [Sky & Telescope](https://skyandtelescope.org/) news section (each image has a image copyright input). One photo came from a co-workers testing the site (photo of the chocolate cake).
 
 - All images will be credited in the [Media](#media) section.
 
@@ -387,7 +393,7 @@ Colours used for text
 </details>
 
 <details><summary>Profile Tooltip</summary>
-<img src="/src/assets/readme-images/features-images/profile.png">
+<img src="/src/assets/readme-images/features-images/profiletooltip.png">
 </details>
 
 <details><summary>Logout Tooltip</summary>
@@ -480,7 +486,7 @@ For the Lighthouse Performance number, I tried to fix the score by downsizing th
 - [NASA Photjournal](https://photojournal.jpl.nasa.gov/) - Used for the images of Saturn and Titan. 
 - [Coolors](https://coolors.co/) - Used to pick colours.
 - [CSS Gradient](https://cssgradient.io/) - Used to great the colours gradient for the background. 
-- [Canva](https://www.canva.com/en_gb/) - Used for the design of the logo, notfound page image, and astronomical clock image.
+- [Canva](https://www.canva.com/en_gb/) - Used for the design of the logo, notfound page image, upload image, and astronomical clock image.
 - [ChatGPT](https://chatgpt.com/auth/login) - Used for About Us, News, and Events content.
 - [AmIResponsive](https://ui.dev/amiresponsive) - Used for the responsive image in README.
 - [ResponsiveTestTool](https://responsivetesttool.com/) - Used to test the site in various sizes. 
@@ -508,7 +514,7 @@ ESLint was used to test the React files.
 | Title | Expected | PASS/FAIL |
 | --- | --- | --- |
 | Navbar | Only logo, Home, About Us, Login, Register appears | PASS |
-| Home Page | Search Bar, Posts with infinit scroll, space members appears without Follow/Unfollow button | PASS |
+| Home Page | Search Bar, Posts with infinite scroll, space members appears without Follow/Unfollow button | PASS |
 | Search Bar | Filters Posts | PASS |
 | About Us | About Us page and link to register | PASS |
 | Register/Login Now | Click on register or login now redirects to either Register/Login |  PASS |
@@ -522,7 +528,7 @@ ESLint was used to test the React files.
 | NavBar | Add Post, News, Events, Home, News, Events, Feed, Liked, Profile Avatar, Logout is visible/clickable | PASS |
 | Space Mission Member Profile Avatar | Follow/Unfollow Button is visible/clickable | PASS |
 | Search Bar | Search bar is visible and can input text and filters | PASS |
-| Infinite Scroll | Scrolling automatically populates more posts | PASS |
+| Infinite Scroll | Scrolling down automatically populates more posts | PASS |
 | Like/Comment Icons | Like/Comment icons visible and clickable | PASS |
 | Single Posts | Clicking into a post redirects to a single post | PASS |
 | Add Post | Add Post is visible and clickable on navbar. When clicked directs to form with title and content | PASS |
@@ -535,7 +541,7 @@ ESLint was used to test the React files.
 | Space Mission Members | All profile members avatar is visible and clickable | PASS |
 | Space Mission Members Avatar | Profile avatar click redirects to profile page | PASS |
 | Profile Page | Has posts or no results found image. It has username and number of posts/followers/following | PASS |
-| Profile Page Edit | Three dots is visible and clickable and dropdown shows edit username, password, or profile | PASS |
+| Profile Page Edit | Three dots is visible and clickable and dropdown shows edit username, password, or profile and are clickable| PASS |
 
 ### News
 
@@ -544,11 +550,11 @@ ESLint was used to test the React files.
 | Search Bar | Search bar is visible and can input text and filters | PASS |
 | News Button | News button is visible and clickable. When clicked redirects to the News section. | PASS |
 | News page | News is listed one after another | PASS |
-| News single post | When single news post is clicked redirect to the single post on one page | PASS |
+| News single post | When single news post is clicked redirects to the single post on one page | PASS |
 | Add News | Add News is visible and clickable in the navbar | PASS |
 | Add News Form | Form input includes images, title, description, author, published on, image copyright, and category dropdown | PASS |
 | Add News Error | Errors appear when Create News is clicked first or when an input is not filled | PASS |
-| News Edit/Delete | Owners of news have three dots when clicked edit/delete icon appears and is clickable | PASS |
+| News Edit/Delete | Owners of news have three dots on the posts when clicked, edit/delete icon appears and is clickable | PASS |
 
 ### Events
 
@@ -561,7 +567,7 @@ ESLint was used to test the React files.
 | Add Event | Add Event is visible and clickable in the navbar. | PASS |
 | Add Event Form | Form input includes title, description, date, time, city, country, audience, price, and url | PASS |
 | Add Event Form Error | Errors appear when Create Event is clicked first or when an input is not filled | PASS |
-| Events Edit/Delete | Owners of created events have three dots when clicked edit/delete icon appears and is clickable | PASS |
+| Events Edit/Delete | Owners of created events have three dots on the posts when clicked, edit/delete icon appears and is clickable | PASS |
 
 ### Comments
 
@@ -578,7 +584,7 @@ ESLint was used to test the React files.
 | Like Icon | Like icon is visible and clickable | PASS |
 | Unlike | User can unlike a post they liked | PASS |
 | Like Error | User can't like their own post | PASS |
-| Like number | Like number increased or decreases if liked or unliked | PASS |
+| Like number | Like number increases or decreases if liked or unliked | PASS |
 
 ### Feed 
 
@@ -591,6 +597,12 @@ ESLint was used to test the React files.
 | Title | Expected | PASS/FAIL |
 | --- | --- | --- |
 | Liked | Posts that were liked populate | PASS |
+
+### 404 Error
+
+| Title | Expected | PASS/FAIL |
+| --- | --- | --- |
+| 404 Error | When going to a url that does not exist redirects to a 404 page | PASS |
 
 ### User Stories Testing
 
@@ -632,7 +644,7 @@ ESLint was used to test the React files.
 
 - <strong>Avatar.js</strong> - Used to store the profile avatar of the users. The Avatar component was used in NavBar.js, Chronicle.js, Comment.js, CommentCreateForm.js, Event.js, Post.js, and Profile.js.
 
-- <strong>MoreDropdown.js</strong> -  Used for the edit/update of comments, posts, profiles, events, and news. For the profiles, it contains edit profile, edit username, and edit password. For the comments, posts, events, and news it contains edit or delete. The MoreDropdown component is used in Chronicle.js, Comment.js, Event.js, Post.js, and ProfilePage.js.
+- <strong>MoreDropdown.js</strong> -  Used for the edit/update of comments, posts, profiles, events, and news. For the profiles, it contains edit profile, edit username, and edit password. For the comments, posts, events, and news it contains edit and delete. The MoreDropdown component is used in Chronicle.js, Comment.js, Event.js, Post.js, and ProfilePage.js.
 
 - <strong>NavBar.js</strong> - Used to display the navbar across all pages. The NavBar was placed in the App.js where all the routes for each page is located.
 
@@ -671,7 +683,7 @@ ESLint was used to test the React files.
 ### React 
 
 1. Create a new workspace using [CI's React Template](https://github.com/Code-Institute-Org/react-ci-template).
-2. Install React.js (Note: In the Moments Walkthrough, when using this command all the dependencies will be installed.)
+2. Install React.js (<strong>Note:</strong> In the Moments Walkthrough, when using this command all the dependencies will be installed.)
 ```
 npx create-react-app . --use-npm
 npm start
@@ -721,13 +733,15 @@ web: serve -s build
 
 - I relied on CI's Moments Walkthrough for the bases of the project with the additon of Chronicles(News) and Events.
 
+* <strong>Note</strong> Chronicles and News was used due to not wanting to confuse News for New. I should have named everything Chronicles, but I was well into the project when I realised. 
+
 ### Content
 
 - Content in bios, posts, and comments were done by me. ChatGPT was used for the content in the About Us, Events, and News pages.
 
 ### Media
 
-Images have been sourced from Pexel, NASA Photojournal Images, Canva, and images from the News section came from the Sky and Telescope site.
+Images have been sourced from Pexel, NASA Photojournal Images, Canva, and images from the News section came from the Sky and Telescope site. Chocolate Cake image came from one of my co-workers testing the site. 
 
 Images sourced from NASA Photojournal library.
 
@@ -754,7 +768,7 @@ Images sourced from Pexel
 - [Space Image 16](https://www.pexels.com/photo/photo-of-beach-and-palm-trees-1457812/)
 - [Space Image 17](https://www.pexels.com/photo/silhouette-of-woman-photographer-using-camera-at-night-2376991/)
 
-Images from News Section (There is a image copyright text in each News posts)
+Images from News Section (there is a image copyright input field in each News posts)
 
 - [Hubble](https://skyandtelescope.org/astronomy-news/hubble-pauses-science-operations-for-transition-to-one-gyro-mode/)
 - [Voyager 1](https://skyandtelescope.org/astronomy-news/voyager-1-and-half-its-instruments-are-back-online/)
@@ -796,4 +810,4 @@ Images sourced from Canva
 
 - Oisin, John, and Thomas from Tutor Support, who helped with a few issues that came up. 
 
-- My husband who has encouraged me throughout the course, and, of course, my animals who have been okay with me being in front of a computer and not being a bed for them to relax. After this I can go back to being a bed. 
+- My husband who has encouraged me throughout the course, and, of course, my animals who have been okay with me being in front of a computer and not being a bed for them to relax. After this I can go back to being a bed 🤪. 
